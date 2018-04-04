@@ -1,0 +1,297 @@
+%!Adobe-FontList 1.19
+%Locale:0x409
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\Book Antiqua
+FileModTime:1393401600
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\GothaBol
+FileModTime:1520013634
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\GothaBoo
+FileModTime:1520013636
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\Gotham-Bold
+FileModTime:1520013634
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\Gotham-Book
+FileModTime:1520013634
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\Gotham-Medium
+FileModTime:1520013634
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Invalid
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\GothaMed
+FileModTime:1520013636
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTStd-Bd
+FamilyName:Helvetica Neue LT Std
+StyleName:75 Bold
+FullName:Helvetica Neue LT Std 75 Bold
+MenuName:HelveticaNeueLT Std
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-Bd.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:29108
+FileModTime:1520013626
+WeightClass:700
+WidthClass:5
+AngleClass:0
+DesignSize:120
+NameArray:0,Mac,18,HelveticaNeueLT Std Bold
+NameArray:0,Mac,4,Helvetica Neue LT Std 75 Bold
+NameArray:0,Win,1,HelveticaNeueLT Std
+NameArray:0,Win,16,Helvetica Neue LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTStd-Hv
+FamilyName:Helvetica Neue LT Std
+StyleName:85 Heavy
+FullName:Helvetica Neue LT Std 85 Heavy
+MenuName:HelveticaNeueLT Std Med
+StyleBits:2
+WritingScript:Roman
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-Hv.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:29972
+FileModTime:1520013618
+WeightClass:750
+WidthClass:5
+AngleClass:0
+DesignSize:120
+NameArray:0,Mac,18,HelveticaNeueLT Std Hvy
+NameArray:0,Mac,4,Helvetica Neue LT Std 85 Heavy
+NameArray:0,Win,1,HelveticaNeueLT Std Med
+NameArray:0,Win,16,Helvetica Neue LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTStd-It
+FamilyName:Helvetica Neue LT Std
+StyleName:56 Italic
+FullName:Helvetica Neue LT Std 56 Italic
+MenuName:HelveticaNeueLT Std
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-It.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:29260
+FileModTime:1520013634
+WeightClass:400
+WidthClass:5
+AngleClass:1
+DesignSize:120
+NameArray:0,Mac,18,HelveticaNeueLT Std Ital
+NameArray:0,Mac,4,Helvetica Neue LT Std 56 Italic
+NameArray:0,Win,1,HelveticaNeueLT Std
+NameArray:0,Win,16,Helvetica Neue LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTStd-Lt
+FamilyName:Helvetica Neue LT Std
+StyleName:45 Light
+FullName:Helvetica Neue LT Std 45 Light
+MenuName:HelveticaNeueLT Std Lt
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-Lt.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:28980
+FileModTime:1520013636
+WeightClass:300
+WidthClass:5
+AngleClass:0
+DesignSize:120
+NameArray:0,Mac,18,HelveticaNeueLT Std Lt
+NameArray:0,Mac,4,Helvetica Neue LT Std 45 Light
+NameArray:0,Win,1,HelveticaNeueLT Std Lt
+NameArray:0,Win,16,Helvetica Neue LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTStd-Md
+FamilyName:Helvetica Neue LT Std
+StyleName:65 Medium
+FullName:Helvetica Neue LT Std 65 Medium
+MenuName:HelveticaNeueLT Std Med
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-Md.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:29148
+FileModTime:1520013638
+WeightClass:500
+WidthClass:5
+AngleClass:0
+DesignSize:120
+NameArray:0,Mac,18,HelveticaNeueLT Std Med
+NameArray:0,Mac,4,Helvetica Neue LT Std 65 Medium
+NameArray:0,Win,1,HelveticaNeueLT Std Med
+NameArray:0,Win,16,Helvetica Neue LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTStd-MdIt
+FamilyName:Helvetica Neue LT Std
+StyleName:66 Medium Italic
+FullName:Helvetica Neue LT Std 66 Medium Italic
+MenuName:HelveticaNeueLT Std Med
+StyleBits:1
+WritingScript:Roman
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-MdIt.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:29636
+FileModTime:1520013638
+WeightClass:500
+WidthClass:5
+AngleClass:1
+DesignSize:120
+NameArray:0,Mac,18,HelveticaNeueLT Std Med Ital
+NameArray:0,Mac,4,Helvetica Neue LT Std 66 Medium Italic
+NameArray:0,Win,1,HelveticaNeueLT Std Med
+NameArray:0,Win,16,Helvetica Neue LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:HelveticaNeueLTStd-Roman
+FamilyName:Helvetica Neue LT Std
+StyleName:55 Roman
+FullName:Helvetica Neue LT Std 55 Roman
+MenuName:HelveticaNeueLT Std
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-Roman.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:29044
+FileModTime:1520013638
+WeightClass:400
+WidthClass:5
+AngleClass:0
+DesignSize:120
+NameArray:0,Mac,18,HelveticaNeueLT Std
+NameArray:0,Mac,4,Helvetica Neue LT Std 55 Roman
+NameArray:0,Win,1,HelveticaNeueLT Std
+NameArray:0,Win,16,Helvetica Neue LT Std
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:Type1
+FontName:MinionPro-Regular
+FamilyName:Minion Pro
+StyleName:Regular
+FullName:Minion Pro
+MenuName:Minion Pro
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\MinionPro-Regular.otf
+DataFormat:sfntData
+UsesStandardEncoding:yes
+isCFF:yes
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:218640
+FileModTime:1422976166
+WeightClass:400
+WidthClass:5
+AngleClass:0
+DesignSize:110
+NameArray:0,Mac,4,Minion Pro
+NameArray:0,Win,1,Minion Pro
+%EndFont
+
+%BeginFont
+Handler:DirectoryHandler
+FontType:TrueType
+FontName:Wingdings3
+FamilyName:Wingdings 3
+StyleName:Regular
+FullName:Wingdings 3
+MenuName:Wingdings 3
+StyleBits:0
+WritingScript:Roman
+OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\Wingdings3.ttf
+DataFormat:sfntData
+hasSVG:no
+VariableFontType:NonVariableFont
+FileLength:38308
+FileModTime:1520013770
+WeightClass:400
+WidthClass:5
+AngleClass:0
+NameArray:0,Mac,4,Wingdings 3
+NameArray:0,Win,1,Wingdings 3
+%EndFont
+

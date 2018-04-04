@@ -1,0 +1,115 @@
+ADOBE INDESIGN PRINTING INSTRUCTIONS FOR SERVICE PROVIDER REPORT
+
+PUBLICATION NAME: 1721_Hess_AR2017_WEB.indd
+
+PACKAGE DATE: 3/29/18 1:08 PM
+Creation Date: 3/29/18
+Modification Date: 3/29/18
+
+CONTACT INFORMATION
+
+Company Name: 
+Contact: 
+Address: 
+
+
+
+
+
+Phone: 
+Fax: 
+Email: 
+
+SPECIAL INSTRUCTIONS AND OTHER NOTES
+
+
+
+
+
+
+External Plug-ins 0
+Non Opaque Objects :On Page2, 3, 5, 6, 7
+
+FONTS
+13 Fonts Used; 0 Missing, 0 Embedded, 0 Incomplete, 0 Protected
+
+Fonts Packaged
+- Name: BookAntiqua; Type: TrueType, Status: OK
+- Name: Gotham-Bold; Type: Type 1, Status: OK
+- Name: Gotham-Book; Type: Type 1, Status: OK
+- Name: Gotham-Medium; Type: Type 1, Status: OK
+- Name: HelveticaNeueLTStd-Bd; Type: OpenType Type 1, Status: OK
+- Name: HelveticaNeueLTStd-Hv; Type: OpenType Type 1, Status: OK
+- Name: HelveticaNeueLTStd-It; Type: OpenType Type 1, Status: OK
+- Name: HelveticaNeueLTStd-Lt; Type: OpenType Type 1, Status: OK
+- Name: HelveticaNeueLTStd-Md; Type: OpenType Type 1, Status: OK
+- Name: HelveticaNeueLTStd-MdIt; Type: OpenType Type 1, Status: OK
+- Name: HelveticaNeueLTStd-Roman; Type: OpenType Type 1, Status: OK
+- Name: MinionPro-Regular; Type: OpenType Type 1, Status: OK
+- Name: Wingdings3; Type: OpenType TrueType, Status: OK
+
+
+COLORS AND INKS
+4 Process Inks; 3 Spot Inks, 1 Duplicate Spot Colors
+
+- Name and Type: Process Cyan; Angle: 15.000; Lines/Inch: 85.000
+- Name and Type: Process Magenta; Angle: 75.000; Lines/Inch: 85.000
+- Name and Type: Process Yellow; Angle: 0.000; Lines/Inch: 85.000
+- Name and Type: Process Black; Angle: 45.000; Lines/Inch: 85.000
+- Name and Type: 3425; Angle: 45.000; Lines/Inch: 85.000
+- Name and Type: Inhouse Green; Angle: 45.000; Lines/Inch: 85.000
+- Name and Type: PANTONE 3425 C; Angle: 45.000; Lines/Inch: 85.000
+
+
+LINKS AND IMAGES
+(Missing & Embedded Links Only)
+Links and Images: 19 Links Found; 0 Modified, 0 Missing 0 Inaccessible
+Images: 0 Embedded, 8 use RGB color space
+
+
+PRINT SETTINGS
+PPD: Canon iR-ADV C5500s-P1 PSV1.0US, (Canon 5540)
+Printing To: Printer
+Number of Copies: 1
+Reader Spreads: No
+Even/Odd Pages: Both
+Pages: All
+Proof: No
+Tiling: None
+Scale: 100%, 100%
+Page Position: Upper Left
+Print Layers: Visible & Printable Layers
+Printer's Marks: None
+Bleed: 0 px, 0 px, 0 px, 0 px
+Color: Composite CMYK
+Trapping Mode: None
+Send Image Data: Optimized Subsampling
+OPI/DCS Image Replacement: No
+Page Size: 1366 x 768
+Paper Dimensions: 612 px x 792 px
+Orientation: Landscape
+Negative: No
+Flip Mode: Off
+
+
+FILE PACKAGE LIST
+
+1. 1721_Hess_AR2017_WEB.indd; type: Adobe InDesign publication; size: 5336K
+2. 1721_Hess_AR2017_WEB.idml; type: InDesign Markup Document; size: 225K
+3. 1721_Hess_AR2017_WEB.pdf; type: Adobe Acrobat Document; size: 12081K
+4. Book Antiqua; type: Font file; size: 0K
+5. GothaBol; type: Font file; size: 0K
+6. Gotham-Bold; type: Font file; size: 0K
+7. GothaBoo; type: Font file; size: 0K
+8. Gotham-Book; type: Font file; size: 0K
+9. GothaMed; type: Font file; size: 0K
+10. Gotham-Medium; type: Font file; size: 0K
+11. HelveticaNeueLTStd-Bd.otf; type: Font file; size: 28K
+12. HelveticaNeueLTStd-Hv.otf; type: Font file; size: 29K
+13. HelveticaNeueLTStd-It.otf; type: Font file; size: 28K
+14. HelveticaNeueLTStd-Lt.otf; type: Font file; size: 28K
+15. HelveticaNeueLTStd-Md.otf; type: Font file; size: 28K
+16. HelveticaNeueLTStd-MdIt.otf; type: Font file; size: 28K
+17. HelveticaNeueLTStd-Roman.otf; type: Font file; size: 28K
+18. MinionPro-Regular.otf; type: Font file; size: 213K
+19. Wingdings3.ttf; type: Font file; size: 37K
