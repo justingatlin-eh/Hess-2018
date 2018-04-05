@@ -1,0 +1,19 @@
+{
+  "name": "hess2018",
+  "version": "1.0.0",
+  "description": "Hess annual report for incDesign",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/justingatlin-eh/Hess-2018.git"
+  },
+  "author": "Justin Gatlin",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/justingatlin-eh/Hess-2018/issues"
+  },
+  "homepage": "https://github.com/justingatlin-eh/Hess-2018#readme"
+}
