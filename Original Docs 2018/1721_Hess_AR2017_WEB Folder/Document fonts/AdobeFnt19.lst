@@ -4,49 +4,49 @@
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\Book Antiqua
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\Book Antiqua
 FileModTime:1393401600
 %EndFont
 
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\GothaBol
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\GothaBol
 FileModTime:1520013634
 %EndFont
 
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\GothaBoo
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\GothaBoo
 FileModTime:1520013636
 %EndFont
 
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\Gotham-Bold
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\Gotham-Bold
 FileModTime:1520013634
 %EndFont
 
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\Gotham-Book
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\Gotham-Book
 FileModTime:1520013634
 %EndFont
 
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\Gotham-Medium
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\Gotham-Medium
 FileModTime:1520013634
 %EndFont
 
 %BeginFont
 Handler:DirectoryHandler
 FontType:Invalid
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\GothaMed
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\GothaMed
 FileModTime:1520013636
 %EndFont
 
@@ -60,7 +60,7 @@ FullName:Helvetica Neue LT Std 75 Bold
 MenuName:HelveticaNeueLT Std
 StyleBits:2
 WritingScript:Roman
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-Bd.otf
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-Bd.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
@@ -88,7 +88,7 @@ FullName:Helvetica Neue LT Std 85 Heavy
 MenuName:HelveticaNeueLT Std Med
 StyleBits:2
 WritingScript:Roman
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-Hv.otf
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-Hv.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
@@ -116,7 +116,7 @@ FullName:Helvetica Neue LT Std 56 Italic
 MenuName:HelveticaNeueLT Std
 StyleBits:1
 WritingScript:Roman
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-It.otf
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-It.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
@@ -144,7 +144,7 @@ FullName:Helvetica Neue LT Std 45 Light
 MenuName:HelveticaNeueLT Std Lt
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-Lt.otf
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-Lt.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
@@ -172,7 +172,7 @@ FullName:Helvetica Neue LT Std 65 Medium
 MenuName:HelveticaNeueLT Std Med
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-Md.otf
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-Md.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
@@ -200,7 +200,7 @@ FullName:Helvetica Neue LT Std 66 Medium Italic
 MenuName:HelveticaNeueLT Std Med
 StyleBits:1
 WritingScript:Roman
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-MdIt.otf
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-MdIt.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
@@ -228,7 +228,7 @@ FullName:Helvetica Neue LT Std 55 Roman
 MenuName:HelveticaNeueLT Std
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-Roman.otf
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\HelveticaNeueLTStd-Roman.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
@@ -256,7 +256,7 @@ FullName:Minion Pro
 MenuName:Minion Pro
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\MinionPro-Regular.otf
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\MinionPro-Regular.otf
 DataFormat:sfntData
 UsesStandardEncoding:yes
 isCFF:yes
@@ -282,7 +282,7 @@ FullName:Wingdings 3
 MenuName:Wingdings 3
 StyleBits:0
 WritingScript:Roman
-OutlineFileName:D:\Projects\Hess\Original-2018\1721_Hess_AR2017_WEB Folder\Document fonts\Wingdings3.ttf
+OutlineFileName:D:\Projects\Hess\Hess-2018\Original Docs 2018\1721_Hess_AR2017_WEB Folder\Document fonts\Wingdings3.ttf
 DataFormat:sfntData
 hasSVG:no
 VariableFontType:NonVariableFont
