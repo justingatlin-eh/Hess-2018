@@ -1,30 +1,21 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import Logo from './Logo'
+import MenuButton from './MenuButton'
+import DownloadButton from './DownloadButton'
+import SubHeader from './SubHeader'
 
 const Header = () => (
-  <div
-    style={{
-      backgroundColor: '#00704a',
-      marginBottom: '1.45rem',
-    }}
-  >
-    <div
-      style={{
-        margin: '0 auto',
-        maxWidth: 960,
-        padding: '1.45rem 1.0875rem',
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: 'white',
-            textDecoration: 'none',
-          }}
-        />
-      </h1>
-    </div>
+  <div>
+    <header>
+      <div>
+        <MenuButton />
+        <Logo />
+        <DownloadButton />
+      </div>
+      <nav>
+        <SubHeader />
+      </nav>
+    </header>
   </div>
 )
 
