@@ -1,16 +1,14 @@
 ---
-title: "financial"
----
-
-# Financial and<br />Operational Highlights
-
+layout: "financial"
+path: "/financial-highlights"
+title: "Financial and<br />Operational Highlights"
 ---
 
 ##### HESS CORPORATION
 
-### Amounts in millions, except per share data
+##### Amounts in millions, except per share data
 
-| Financial — for the year                                         | 2017        | 2018        |
+| _Financial — for the year_                                       | 2017        | 2018        |
 | ---------------------------------------------------------------- | ----------- | ----------- |
 | Sales and other operating revenues                               | $1,466      | $1,762      |
 | Net income (loss) attributable to Hess Corporation               | $(4,074)    | (6,132)     |

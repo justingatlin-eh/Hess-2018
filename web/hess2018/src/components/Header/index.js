@@ -4,19 +4,23 @@ import MenuButton from './MenuButton'
 import DownloadButton from './DownloadButton'
 import SubHeader from './SubHeader'
 
-const Header = () => (
-  <div>
-    <header>
+class Header extends React.Component {
+  render() {
+    return (
       <div>
-        <MenuButton />
-        <Logo />
-        <DownloadButton />
+        <header>
+          <div>
+            <MenuButton />
+            <Logo />
+            <DownloadButton />
+          </div>
+          <nav className="navbar navbar-default">
+            <SubHeader />
+          </nav>
+        </header>
       </div>
-      <nav>
-        <SubHeader />
-      </nav>
-    </header>
-  </div>
-)
+    )
+  }
+}
 
 export default Header

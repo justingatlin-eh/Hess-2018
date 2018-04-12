@@ -7,7 +7,16 @@ export default ({ children }) => (
     <div>
       <div>
         <a href="javascript: void(0);">
-          <img src={MenuButton} alt="Menu Button" />
+          <img
+            src={MenuButton}
+            alt="Menu Button"
+            onClick={e => {
+              const el = document.querySelector('.sub-header')
+              const current = el.getAttribute('data-hide')
+              const toggled = String(/true/i.test(current) ? false : true)
+              el.setAttribute('data-hide', toggled)
+            }}
+          />
         </a>
       </div>
     </div>

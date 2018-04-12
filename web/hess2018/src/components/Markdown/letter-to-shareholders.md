@@ -1,14 +1,13 @@
 ---
-title: shareholders
----
-
-# Letter to Shareholders
-
+path: "/letter-to-shareholders"
+linkText: "Letter to<br />Shareholders"
+layout: "home"
+title: "Letter to Shareholders"
 ---
 
 In 2017, we made significant progress in positioning our company to deliver significant value to shareholders. Our strategy is to grow our resource base in a capital disciplined manner, to move down the cost curve so we are resilient in a low oil price environment, and to be cash generative at a $50 per barrel Brent oil price post 2020.
 
-### High Graded, Focused Portfolio
+#### High Graded, Focused Portfolio
 
 Consistent with our strategy, we moved aggressively in 2017 to high grade and focus our portfolio by investing in our highest return assets – Guyana, which is one of the industry’s largest oil discoveries in a decade, and the Bakken, where we have more than 500,000 net acres in the core of the play – and divesting higher cost, mature assets.
 
@@ -34,7 +33,7 @@ On January 31, we announced a 2018 Exploration and Production (E&P) capital and 
 
 flat with 2017. Approximately two thirds of our 2018 budget will be allocated for continuing exploration and development activities offshore Guyana and for the Bakken.
 
-### Safety and Social Responsibility
+#### Safety and Social Responsibility
 
 Our company is committed to helping meet the world’s growing energy needs in a safe, environmentally responsible, socially sensitive and profitable way, which is why sustainability practices are a fundamental part of our business strategy and operations. We are proud to have been recognized once again in 2017 by a number of third-party organizations for the quality of our environmental, social and governance performance and disclosure.
 

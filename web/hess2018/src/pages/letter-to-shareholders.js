@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'gatsby-link'
 
 export default ({ data }) => {
   const node = data.allMarkdownRemark.edges[0].node
@@ -14,9 +13,9 @@ export default ({ data }) => {
 }
 
 export const query = graphql`
-  query FinancialQuery {
+  query LetterToShareholdersQuery {
     allMarkdownRemark(
-      filter: { fileAbsolutePath: { regex: "/financial-highlights/" } }
+      filter: { fileAbsolutePath: { regex: "/letter-to-shareholders/" } }
     ) {
       edges {
         node {

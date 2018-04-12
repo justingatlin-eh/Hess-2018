@@ -1,19 +1,20 @@
 import React from 'react'
 import Link from 'gatsby-link'
 
+// <Link to={`/hess/2018${props.to}`}>{props.children}</Link>
 const LinkList = props => (
   <li>
-    <Link to={`/hess/2018${props.to}`}>{props.children}</Link>
+    <Link to={`${props.to}`}>{props.children}</Link>
   </li>
 )
 
 export default ({ children, data }) => (
-  <ul className="sub-header">
-    <LinkList to="/company">Our Company</LinkList>
+  <ul className="sub-header container-fluid" data-hide="true">
+    <LinkList to="/our-company">Our Company</LinkList>
     <LinkList to="/financial-highlights">
       Financial and<br />Organizational Highlights
     </LinkList>
-    <LinkList to="/shareholders-and-officers">
+    <LinkList to="/letter-to-shareholders">
       Letter to<br />Shareholders
     </LinkList>
     <LinkList to="/global-operations">
