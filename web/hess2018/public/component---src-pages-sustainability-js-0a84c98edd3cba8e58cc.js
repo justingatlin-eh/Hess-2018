@@ -1,0 +1,2 @@
+webpackJsonp([0x8ef4605a1622],{265:function(e,t,u){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var a=u(2),l=n(a),f=u(15),i=(n(f),function(){return l.default.createElement("div",null,"Sustainability")});t.default=i,e.exports=t.default}});
+//# sourceMappingURL=component---src-pages-sustainability-js-0a84c98edd3cba8e58cc.js.map

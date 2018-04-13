@@ -1,0 +1,96 @@
+{
+  "assetsByChunkName": {
+    "path---board-and-officers": [
+      "path---board-and-officers-a0e39f21c11f6a62c5ab.js",
+      "path---board-and-officers-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-board-and-officers-js": [
+      "component---src-pages-board-and-officers-js-7066e5811997943960eb.js",
+      "component---src-pages-board-and-officers-js-7066e5811997943960eb.js.map"
+    ],
+    "path---our-company": [
+      "path---our-company-11c1f153feedff6ca915.js",
+      "path---our-company-11c1f153feedff6ca915.js.map"
+    ],
+    "component---src-pages-index-js": [
+      "component---src-pages-index-js-42f1f75a48685a74270f.js",
+      "component---src-pages-index-js-42f1f75a48685a74270f.js.map"
+    ],
+    "component---src-pages-financial-highlights-js": [
+      "component---src-pages-financial-highlights-js-72c09cadd25bc57db8bc.js",
+      "component---src-pages-financial-highlights-js-72c09cadd25bc57db8bc.js.map"
+    ],
+    "path---letter-to-shareholders": [
+      "path---letter-to-shareholders-99b033ef0d62aa13b882.js",
+      "path---letter-to-shareholders-99b033ef0d62aa13b882.js.map"
+    ],
+    "component---src-pages-letter-to-shareholders-js": [
+      "component---src-pages-letter-to-shareholders-js-b7a69cec84883f32ac54.js",
+      "component---src-pages-letter-to-shareholders-js-b7a69cec84883f32ac54.js.map"
+    ],
+    "path---": [
+      "path----1a610a9ad25bfc6e1ea5.js",
+      "path----1a610a9ad25bfc6e1ea5.js.map"
+    ],
+    "path---downloads": [
+      "path---downloads-701d291d93d678010ee8.js",
+      "path---downloads-701d291d93d678010ee8.js.map"
+    ],
+    "path---global-operations": [
+      "path---global-operations-7ff29dbc5fa41550d74c.js",
+      "path---global-operations-7ff29dbc5fa41550d74c.js.map"
+    ],
+    "path---financial-highlights": [
+      "path---financial-highlights-133ce3bf7eb91c198263.js",
+      "path---financial-highlights-133ce3bf7eb91c198263.js.map"
+    ],
+    "component---src-layouts-index-js": [
+      "component---src-layouts-index-js-bdb4b6da3131e6e95eb0.js",
+      "component---src-layouts-index-js-bdb4b6da3131e6e95eb0.js.map"
+    ],
+    "component---src-pages-our-company-js": [
+      "component---src-pages-our-company-js-d78e282d1fe71023626f.js",
+      "component---src-pages-our-company-js-d78e282d1fe71023626f.js.map"
+    ],
+    "component---src-pages-global-operations-js": [
+      "component---src-pages-global-operations-js-292ab8f2b73cc3fdbcb1.js",
+      "component---src-pages-global-operations-js-292ab8f2b73cc3fdbcb1.js.map"
+    ],
+    "path---index": [
+      "path---index-a0e39f21c11f6a62c5ab.js",
+      "path---index-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "path---sustainability": [
+      "path---sustainability-4b817600779cbce4fadd.js",
+      "path---sustainability-4b817600779cbce4fadd.js.map"
+    ],
+    "component---src-pages-sustainability-js": [
+      "component---src-pages-sustainability-js-ae7fa0d9684594b633e3.js",
+      "component---src-pages-sustainability-js-ae7fa0d9684594b633e3.js.map"
+    ],
+    "component---src-pages-404-js": [
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js",
+      "component---src-pages-404-js-4503918ea3a16cfcdb75.js.map"
+    ],
+    "commons": [
+      "commons-892d06806ab0cf06f0f3.js",
+      "commons-892d06806ab0cf06f0f3.js.map"
+    ],
+    "path---404-html": [
+      "path---404-html-a0e39f21c11f6a62c5ab.js",
+      "path---404-html-a0e39f21c11f6a62c5ab.js.map"
+    ],
+    "component---src-pages-downloads-js": [
+      "component---src-pages-downloads-js-dd51c599c440fd459f98.js",
+      "component---src-pages-downloads-js-dd51c599c440fd459f98.js.map"
+    ],
+    "app": [
+      "app-a6a00fc9379650bb3f63.js",
+      "app-a6a00fc9379650bb3f63.js.map"
+    ],
+    "path---404": [
+      "path---404-a0e39f21c11f6a62c5ab.js",
+      "path---404-a0e39f21c11f6a62c5ab.js.map"
+    ]
+  }
+}

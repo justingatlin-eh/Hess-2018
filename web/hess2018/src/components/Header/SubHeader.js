@@ -1,10 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import constants from './Constants'
 
-// <Link to={`/hess/2018${props.to}`}>{props.children}</Link>
 const LinkList = props => (
   <li>
-    <Link to={`${props.to}`}>{props.children}</Link>
+    <Link onClick={e => toggleMenu(e)} to={`${props.to}`}>
+      {props.children}
+    </Link>
   </li>
 )
 
@@ -12,7 +14,7 @@ export default ({ children, data }) => (
   <ul className="sub-header container-fluid" data-hide="true">
     <LinkList to="/our-company">Our Company</LinkList>
     <LinkList to="/financial-highlights">
-      Financial and<br />Organizational Highlights
+      Financial and<br />Operational Highlights
     </LinkList>
     <LinkList to="/letter-to-shareholders">
       Letter to<br />Shareholders

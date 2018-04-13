@@ -1,6 +1,7 @@
 import React from 'react'
 import MenuList from './MenuList'
 import MenuButton from '../../assets/menubutton.png'
+import { toggleMenu } from '../Header/CustomEvents'
 
 export default ({ children }) => (
   <div className="menu-button">
@@ -10,12 +11,7 @@ export default ({ children }) => (
           <img
             src={MenuButton}
             alt="Menu Button"
-            onClick={e => {
-              const el = document.querySelector('.sub-header')
-              const current = el.getAttribute('data-hide')
-              const toggled = String(/true/i.test(current) ? false : true)
-              el.setAttribute('data-hide', toggled)
-            }}
+            onClick={e => toggleMenu(e)}
           />
         </a>
       </div>

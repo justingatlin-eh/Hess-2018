@@ -1,0 +1,2 @@
+webpackJsonp([0xb636e7fcccd2],{267:function(e,t,a){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0,t.query=void 0;var u=a(1),n=l(u),d=a(11);l(d);t.default=function(e){var t=e.data;return n.default.createElement("div",null,n.default.createElement("div",null,"Download Page"),n.default.createElement("div",null,t.site.siteMetadata.title))};t.query="** extracted graphql fragment **"}});
+//# sourceMappingURL=component---src-pages-downloads-js-dd51c599c440fd459f98.js.map

@@ -4,7 +4,7 @@ path: "/financial-highlights"
 title: "Financial and<br />Operational Highlights"
 ---
 
-##### HESS CORPORATION
+### HESS CORPORATION
 
 ##### Amounts in millions, except per share data
 

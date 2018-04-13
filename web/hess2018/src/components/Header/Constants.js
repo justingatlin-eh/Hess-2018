@@ -1,0 +1,7 @@
+export const COMPANY = '/our-company'
+export const FINANCIAL = '/financial-highlights'
+export const LETTER = '/letter-to-shareholders'
+export const global = '/global-operations'
+export const sustain = '/sustainability'
+export const board = '/board'
+export const download = '/downloads'

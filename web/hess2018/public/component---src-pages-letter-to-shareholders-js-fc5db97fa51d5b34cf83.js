@@ -1,0 +1,2 @@
+webpackJsonp([60115805862101],{263:function(e,t,a){"use strict";function l(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0,t.query=void 0;var n=a(2),r=l(n);t.default=function(e){var t=e.data,a=t.allMarkdownRemark.edges[0].node,l=a.html,n=a.frontmatter.title;return r.default.createElement("div",null,r.default.createElement("div",null,n),r.default.createElement("div",{dangerouslySetInnerHTML:{__html:l}}))};t.query="** extracted graphql fragment **"}});
+//# sourceMappingURL=component---src-pages-letter-to-shareholders-js-fc5db97fa51d5b34cf83.js.map

@@ -1,13 +1,13 @@
 import React from 'react'
+import ShareHolders from '../components/MainContent/Shareholders'
 
 export default ({ data }) => {
   const node = data.allMarkdownRemark.edges[0].node
   const body = node.html
   const pageTitle = node.frontmatter.title
   return (
-    <div>
-      <div>{pageTitle}</div>
-      <div dangerouslySetInnerHTML={{ __html: body }} />
+    <div className="shareholders text-content">
+      <ShareHolders />
     </div>
   )
 }

@@ -1,0 +1,2 @@
+webpackJsonp([0xe23a2ccb960],{266:function(e,t,u){"use strict";function n(e){return e&&e.__esModule?e:{default:e}}t.__esModule=!0;var a=u(1),l=n(a),r=u(11);n(r);t.default=function(){return l.default.createElement("div",null,"Board Page")},e.exports=t.default}});
+//# sourceMappingURL=component---src-pages-board-and-officers-js-7066e5811997943960eb.js.map
