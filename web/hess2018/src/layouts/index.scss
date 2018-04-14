@@ -8,6 +8,8 @@ $content-width: 650px;
 $page-hero-image-width: 950px;
 $menu-hover: #003c25;
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
 @font-face {
   font-family: 'Gotham-Medium';
   src: url('Gotham-Medium') format('truetype'); /* Safari, Android, iOS */
@@ -19,8 +21,17 @@ $menu-hover: #003c25;
 }
 
 @font-face {
+  font-family: 'HelveticaNeueLTStdItalics';
+  src: url('HelveticaNeueLTStd-It.otf') format('truetype'); /* Safari, Android, iOS */
+}
+
+@font-face {
   font-family: 'HelveticaNeueHv';
   src: url('HelveticaNeueLTStd-Hv.otf') format('truetype'); /* Safari, Android, iOS */
+}
+@font-face {
+  font-family: 'HelveticaNeueLtMedium';
+  src: url('HelveticaNeueLTStd-Md.otf') format('truetype'); /* Safari, Android, iOS */
 }
 
 @font-face {
@@ -65,10 +76,13 @@ th {
 }
 
 body {
-  font-family: HelveticaNeueLt, 'Gotham', 'Franklin Gothic Medium',
+  font-family: 'Montserrat', HelveticaNeueLt, 'Gotham', 'Franklin Gothic Medium',
     'Arial Narrow', Arial, sans-serif;
 }
-
+h1,
+h4 {
+  font-weight: 700;
+}
 td {
   font-family: 'HelveticaNeueLT', 'HelveticaNeue', 'Helvetica', 'Gotham',
     'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -118,9 +132,10 @@ header {
         padding: 10px;
         width: 158px;
         height: 46px;
-        &:hover {
-          background-color: $menu-hover;
-        }
+      }
+      a:hover,
+      &.current-page {
+        background-color: $menu-hover;
       }
     }
   }
@@ -130,8 +145,8 @@ header {
   position: relative;
   text-align: center;
   color: white;
-  margin-left: 0;
-  margin-right: 0;
+  margin-left: auto;
+  margin-right: auto;
   max-width: 1348px;
   .main-image {
     position: absolute;
@@ -226,44 +241,44 @@ header {
     max-width: $content-width;
     margin-left: auto;
     margin-right: auto;
-
-    button {
-      background-color: #ffffff;
-      border: 1px solid $header-green;
-      text-align: center;
-      width: 320px;
-      height: 50px;
-      font-size: 16px;
-      vertical-align: middle;
-      &:after {
-        content: '\2612';
-        display: inline-block;
-        font-size: 18px;
-        padding-left: 5px;
-        transform: scale(0.8, 1.2);
-        vertical-align: middle;
-      }
-      &:hover {
-        position: relative;
-        &:before {
-          content: ' ';
-          background-color: $header-green;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 100%;
-          height: 4px;
-        }
-      }
-
-      &:last-child {
+    &.buttons {
+      display: flex;
+      justify-content: center;
+      a:last-child button {
         margin-left: 30px;
       }
+      button {
+        font-weight: 700;
+        background-color: #ffffff;
+        border: 1px solid $header-green;
+        text-align: center;
+        width: 320px;
+        height: 50px;
+        font-size: 16px;
+        vertical-align: middle;
+        &:after {
+          content: '\279E';
+          display: inline-block;
+          // background-color: $header-green
+          font-size: 18px;
+          padding-left: 5px;
+          transform: scale(0.8, 1.2);
+          vertical-align: middle;
+        }
+        &:hover {
+          position: relative;
+          &:before {
+            content: ' ';
+            background-color: $header-green;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+          }
+        }
+      }
     }
-  }
-  .buttons {
-    display: flex;
-    justify-content: center;
   }
 }
 
@@ -383,6 +398,10 @@ h1 {
   }
   .signatures {
     margin-top: 80px;
+    .name {
+      font-family: 'HelveticaNeueLtMedium', 'sans-serif';
+      font-weight: bold;
+    }
     & > div {
       display: inline-block;
 
@@ -432,6 +451,7 @@ h1 {
     color: #ffffff;
     bottom: 45px;
     left: 15px;
+    font-family: HelveticaNeueLTStdItalics, 'sans-serif';
   }
   &.two,
   &.three {

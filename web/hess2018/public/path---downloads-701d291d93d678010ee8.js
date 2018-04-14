@@ -1,2 +1,0 @@
-webpackJsonp([62819031002353],{412:function(t,e){t.exports={data:{site:{siteMetadata:{title:"Hess Annual Report"}}},pathContext:{}}}});
-//# sourceMappingURL=path---downloads-701d291d93d678010ee8.js.map
