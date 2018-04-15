@@ -5,13 +5,16 @@ import Header from '../components/Header'
 import { withPrefix } from 'gatsby-link'
 import './index.scss'
 
-const TemplateWrapper = ({ children, data, location }) => {
-  const isSplash = location.pathname === withPrefix('/')
+const TemplateWrapper = props => {
+  const path = props.location.pathname
+  const isSplash = path === withPrefix('/')
   const pageClass = isSplash ? 'hero' : 'wrapper'
 
   function useHeader() {
-    return isSplash ? '' : <Header />
+    return isSplash ? '' : <Header location={props.location.pathname} />
   }
+
+  const myprops = { path: path }
 
   return (
     <div>
@@ -19,7 +22,9 @@ const TemplateWrapper = ({ children, data, location }) => {
         <title>Hess Annual Report</title>
       </Helmet>
       {useHeader()}
-      <div className={pageClass}>{children()}</div>
+      <div className={pageClass}>
+        {props.children({ ...props, ...myprops })}
+      </div>
     </div>
   )
 }

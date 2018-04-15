@@ -1,7 +1,7 @@
 import React from 'react'
 import MenuList from './MenuList'
 import MenuButton from '../../assets/menubutton.png'
-import { toggleMenu } from '../Header/CustomEvents'
+import { toggleMenu } from './CustomEvents'
 
 export default ({ children }) => (
   <div className="menu-button">

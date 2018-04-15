@@ -1,15 +1,12 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import constants from './Constants'
-
-function isCurrentPage(to) {
-  const re = new RegExp(to)
-  return re.test(window.location.pathname) ? 'current-page' : ''
-}
+import { toggleMenu } from './CustomEvents'
 
 const LinkList = props => {
+  const isCurrentPage = props.currentlocation == props.to ? 'current-page' : ''
   return (
-    <li className={isCurrentPage(props.to)}>
+    <li className={isCurrentPage}>
       <Link onClick={e => toggleMenu(e)} to={`${props.to}`}>
         {props.children}
       </Link>
@@ -17,21 +14,25 @@ const LinkList = props => {
   )
 }
 
-export default ({ children, data }) => {
+export default props => {
   return (
     <ul className="sub-header container-fluid" data-hide="true">
-      <LinkList to="/our-company">Our Company</LinkList>
-      <LinkList to="/financial-highlights">
+      <LinkList currentlocation={props.location} to="/our-company">
+        Our Company
+      </LinkList>
+      <LinkList currentlocation={props.location} to="/financial-highlights">
         Financial and<br />Operational Highlights
       </LinkList>
-      <LinkList to="/letter-to-shareholders">
+      <LinkList currentlocation={props.location} to="/letter-to-shareholders">
         Letter to<br />Shareholders
       </LinkList>
-      <LinkList to="/global-operations">
+      <LinkList currentlocation={props.location} to="/global-operations">
         Global<br />Operations
       </LinkList>
-      <LinkList to="/sustainability">Sustainablity</LinkList>
-      <LinkList to="/board-and-officers">
+      <LinkList currentlocation={props.location} to="/sustainability">
+        Sustainablity
+      </LinkList>
+      <LinkList currentlocation={props.location} to="/board-and-officers">
         Board of Directors and<br />Corporate Officers
       </LinkList>
     </ul>

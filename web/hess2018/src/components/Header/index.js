@@ -15,7 +15,7 @@ class Header extends React.Component {
             <DownloadButton />
           </div>
           <nav className="navbar navbar-default">
-            <SubHeader />
+            <SubHeader location={this.props.location} />
           </nav>
         </header>
       </div>
