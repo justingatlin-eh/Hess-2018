@@ -13,7 +13,7 @@ const FinancialData = props => {
           <tr>
             <th>Financial — for the year</th>
             <th>2017</th>
-            <th>2018</th>
+            <th>2016</th>
           </tr>
         </thead>
         <tbody>
