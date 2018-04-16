@@ -4,6 +4,7 @@ import Helmet from 'react-helmet'
 import Header from '../components/Header'
 import { withPrefix } from 'gatsby-link'
 import './index.scss'
+import DownloadDialog from './DownloadDialog'
 
 const TemplateWrapper = props => {
   const path = props.location.pathname
@@ -23,6 +24,7 @@ const TemplateWrapper = props => {
       </Helmet>
       {useHeader()}
       <div className={pageClass}>
+        <DownloadDialog />
         {props.children({ ...props, ...myprops })}
       </div>
     </div>

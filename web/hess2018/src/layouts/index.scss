@@ -89,6 +89,13 @@ h1 {
   border-bottom: 1px solid $header-green;
   color: $header-green;
 }
+h2 {
+  color: $header-green;
+}
+
+.board h2 {
+  margin-bottom: 30px;
+}
 
 h4 {
   font-family: HelveticaNeueLtMedium;
@@ -494,11 +501,23 @@ header {
     }
   }
 }
-.download-button img {
-  width: 102px;
-  height: 48px;
-}
+.download-button {
+  &:hover {
+    cursor: pointer;
+  }
 
+  img {
+    width: 102px;
+    height: 48px;
+  }
+}
+.container.download {
+  background-color: #ffffff;
+  .ui-dialog-content {
+    background-color: #ffffff;
+    padding: 5px;
+  }
+}
 .menu img {
   width: 43px;
   height: 43px;
