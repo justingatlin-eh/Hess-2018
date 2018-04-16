@@ -9,7 +9,7 @@ const CompanyPage = props => {
     return String(Math.random() * 100 + Date.now()).replace('.')
   }
   const arr = [
-    'Hess Corporation is a leading global independent energy company engaged in the exploration and production of crude oil and natural gas.',
+    '<span class="first"><span class="large">Hess Corporation</span> is a leading global independent energy company engaged in the exploration and production of crude oil and natural gas.</span>',
     'We are committed to meeting the highest standards of corporate citizenship by protecting the health and safety of our employees, safeguarding the environment and making a positive impact on the communities in which we do business.',
   ]
 
@@ -27,8 +27,18 @@ const CompanyPage = props => {
         </div>
       </div>
       <div className="image-container">
-        <img src={img1} />
-        <img src={img2} />
+        <Link to="/global-operations">
+          <img src={img1} />
+          <span>
+            <span>Global Operation</span>
+          </span>
+        </Link>
+        <Link to="/sustainability">
+          <img src={img2} />
+          <span>
+            <span>Sustainability</span>
+          </span>
+        </Link>
       </div>
     </div>
   )

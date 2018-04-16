@@ -34,7 +34,10 @@ const FinancialData = props => {
             <td>(6,132)</td>
           </tr>
           <tr>
-            <td>Net income (loss) per share diluted (a</td>
+            <td>
+              Net income (loss) per share diluted{' '}
+              <span className="super">(a)</span>
+            </td>
             <td>(13.12)</td>
             <td>(19.92)</td>
           </tr>
@@ -202,13 +205,13 @@ const FinancialData = props => {
       </table>
       <div className="footer">
         <h6>
-          <span className="super">(a)</span> Calculated as net income (loss)
-          attributable to Hess Corporation less preferred stock dividends as
-          applicable, divided by weighted average number of diluted shares.
+          <span>(a)</span> Calculated as net income (loss) attributable to Hess
+          Corporation less preferred stock dividends as applicable, divided by
+          weighted average number of diluted shares.
         </h6>
         <h6>
-          <span className="super">(b)</span> Total debt as a percentage of the
-          sum of total debt and total equity.
+          <span>(b)</span> Total debt as a percentage of the sum of total debt
+          and total equity.
         </h6>
       </div>
     </div>

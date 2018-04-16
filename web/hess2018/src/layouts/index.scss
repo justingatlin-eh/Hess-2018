@@ -79,9 +79,19 @@ body {
   font-family: 'Montserrat', HelveticaNeueLt, 'Gotham', 'Franklin Gothic Medium',
     'Arial Narrow', Arial, sans-serif;
 }
-h1,
+h1 {
+  font-family: HelveticaNeueBold;
+  font-size: 40px;
+  line-height: 44px;
+  margin-top: 140px;
+  padding-bottom: 20px;
+  margin-bottom: 30px;
+  border-bottom: 1px solid $header-green;
+  color: $header-green;
+}
+
 h4 {
-  font-weight: 700;
+  font-family: HelveticaNeueLtMedium;
 }
 td {
   font-family: 'HelveticaNeueLT', 'HelveticaNeue', 'Helvetica', 'Gotham',
@@ -101,6 +111,12 @@ h3 {
 button,
 h4 {
   color: $header-green;
+}
+
+span.super {
+  font-size: x-small;
+  position: relative;
+  top: -6px;
 }
 
 header {
@@ -130,12 +146,13 @@ header {
         vertical-align: bottom;
         text-align: center;
         padding: 10px;
-        width: 158px;
+        width: 164px;
         height: 46px;
       }
       a:hover,
       &.current-page {
         background-color: $menu-hover;
+        font-weight: bold;
       }
     }
   }
@@ -148,6 +165,9 @@ header {
   margin-left: auto;
   margin-right: auto;
   max-width: 1348px;
+  &:hover {
+    cursor: pointer;
+  }
   .main-image {
     position: absolute;
     left: 0;
@@ -188,6 +208,10 @@ header {
     max-width: $content-widest;
   }
   .company {
+    .large {
+      text-transform: uppercase;
+      font-weight: 700;
+    }
     width: 100%;
     max-width: 100%;
     .inner-content {
@@ -196,6 +220,9 @@ header {
         padding-top: 40px;
         margin-top: 120px;
       }
+      .content {
+        max-width: 100%;
+      }
     }
   }
 }
@@ -203,6 +230,15 @@ header {
 .text-content {
   margin-left: auto;
   margin-right: auto;
+  .intro {
+    margin-top: 40px;
+    color: $header-green;
+    p {
+      font-size: 18px;
+      line-height: 26px;
+      font-family: HelveticaNeueLtMedium;
+    }
+  }
   section {
     margin-bottom: 40px;
     p {
@@ -224,7 +260,8 @@ header {
 
 .logo {
   img {
-    max-height: 100%;
+    height: 54px;
+    width: 90px;
   }
 }
 
@@ -241,6 +278,8 @@ header {
     max-width: $content-width;
     margin-left: auto;
     margin-right: auto;
+    font-size: 27px;
+    line-height: 38px;
     &.buttons {
       display: flex;
       justify-content: center;
@@ -264,12 +303,16 @@ header {
           padding-left: 5px;
           transform: scale(0.8, 1.2);
           vertical-align: middle;
+          color: $header-green;
         }
         &:hover {
           position: relative;
+          &:after {
+            color: $subheader-green;
+          }
           &:before {
             content: ' ';
-            background-color: $header-green;
+            background-color: $menu-hover;
             position: absolute;
             bottom: 0;
             left: 0;
@@ -286,12 +329,39 @@ header {
   margin-top: 50px;
   white-space: nowrap;
   text-align: center;
-  img {
-    max-width: 50%;
-    vertical-align: top;
-    margin-bottom: 0;
+  white-space: nowrap;
+  a {
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    & > span {
+      position: absolute;
+      vertical-align: middle;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      font-size: 28px;
+      line-height: 50px;
+      background-color: $menu-hover;
+      color: #ffffff;
+    }
+    img {
+      max-width: 100%;
+      vertical-align: top;
+      margin-bottom: 0;
+      position: relative;
+      z-index: 1;
+    }
+
+    &:hover {
+      cursor: pointer;
+      span {
+        z-index: 1;
+      }
+    }
   }
 }
+
 .financial {
   max-width: $content-width;
   margin: 0 auto;
@@ -312,6 +382,7 @@ header {
       text-align: right;
       padding-right: 20px;
       white-space: nowrap;
+      font-family: HelveticaNeueLtMedium;
     }
     .percent {
       margin-right: -10px;
@@ -324,6 +395,7 @@ header {
       text-align: left;
       color: #000000;
       width: auto;
+      font-family: HelveticaNeueLT;
     }
     th:last-child {
       color: #000000;
@@ -332,6 +404,7 @@ header {
     td:last-child {
       padding-right: 20px;
       width: 115px;
+      font-family: HelveticaNeueLT;
     }
     td {
       border-bottom: none;
@@ -345,14 +418,6 @@ header {
       text-align: left;
       margin-right: 10px;
     }
-  }
-  h1 {
-    font-size: 40px;
-    line-height: 44px;
-    margin-top: 140px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid $header-green;
-    color: $header-green;
   }
   h5 {
     font-size: 12px;
@@ -379,22 +444,12 @@ header {
   }
 }
 
-h1 {
-  font-size: 40px;
-  line-height: 44px;
-  margin-top: 140px;
-  padding-bottom: 20px;
-  margin-bottom: 30px;
-  border-bottom: 1px solid $header-green;
-  color: $header-green;
-}
 .shareholders {
   margin: 0 auto;
   .intro {
-    margin-top: 40px;
-    color: $header-green;
-    font-size: 18px;
-    line-height: 26px;
+    font-size: 21px;
+    p {
+    }
   }
   .signatures {
     margin-top: 80px;
@@ -439,8 +494,14 @@ h1 {
     }
   }
 }
-.download-button {
-  max-width: 100px;
+.download-button img {
+  width: 102px;
+  height: 48px;
+}
+
+.menu img {
+  width: 43px;
+  height: 43px;
 }
 
 .img {
@@ -479,6 +540,8 @@ h1 {
         position: absolute;
         color: $header-green;
         left: 0;
+        font-size: 40px;
+        top: -18px;
       }
     }
   }
