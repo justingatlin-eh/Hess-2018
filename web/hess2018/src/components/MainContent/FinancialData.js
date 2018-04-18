@@ -147,7 +147,7 @@ const FinancialData = props => {
           <tr>
             <th>Operating — for the year</th>
             <th>2017</th>
-            <th>2018</th>
+            <th>2016</th>
           </tr>
           <tr>
             <td>Net production</td>
