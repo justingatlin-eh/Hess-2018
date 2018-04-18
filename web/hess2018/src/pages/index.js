@@ -7,10 +7,16 @@ const IndexPage = () => {
     navigateTo('/our-company')
   }
 
-  setTimeout(goTo, 5000)
+  const timer = setTimeout(goTo, 5000)
 
   return (
-    <div className="splash" onClick={() => goTo()}>
+    <div
+      className="splash"
+      onClick={() => {
+        clearTimeout(timer)
+        goTo()
+      }}
+    >
       <img className="main-image" src={HomeHero} />
     </div>
   )

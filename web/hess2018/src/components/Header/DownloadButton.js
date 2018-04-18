@@ -3,9 +3,9 @@ import React from 'react'
 import Link from 'gatsby-link'
 import DownloadIcon from '../../assets/download-icon.png'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
-import TenK from '../../assets/Hess_10Kcover_image.jpg'
-import ARCover from '../../assets/1721_Hess_AR2017_Cover.jpg'
-// import '../../assets/1721_Hess_AR2017_Promo1B.pdf'
+import TenK from '../../assets/Hess_10Kcover.png'
+import ARCover from '../../assets/Hess_AR2017_Cover.png'
+import '../../assets/1721_Hess_AR2017_Promo1B.pdf'
 
 class ModalExample extends React.Component {
   constructor(props) {
@@ -43,12 +43,12 @@ class ModalExample extends React.Component {
             <span>Downloads</span>
           </ModalHeader>
           <ModalBody>
-            <Link to="#">
+            <a href="javascript: void(0);">
               <img src={TenK} />
-            </Link>
-            <Link to="">
+            </a>
+            <a href="javascript: void(0);">
               <img src={ARCover} />
-            </Link>
+            </a>
           </ModalBody>
         </Modal>
       </div>

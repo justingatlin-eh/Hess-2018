@@ -571,6 +571,11 @@ header {
 }
 
 .board {
+  h2 {
+    color: #000000;
+    font-size: 21px;
+    font-family: HelveticaNeueLtMedium;
+  }
   #content div {
     margin-bottom: 0;
   }
@@ -584,14 +589,14 @@ header {
   }
 
   .memberNameParent {
-    margin-top: 8px;
+    margin-top: 12px;
   }
 
   .sec {
-    font-size: 13px;
-    line-height: 16px;
+    font-size: 16px;
+    line-height: 18px;
     color: #000;
-    padding: 5px 0 0;
+    padding: 6px 0 0;
   }
 
   .section0 .sn0,
@@ -667,12 +672,12 @@ header {
 
   .affiliate {
     display: block;
-    line-height: 16px;
+    line-height: 18px;
   }
 
   .memberName,
   .subName {
-    font-size: 13px;
+    font-size: 21px;
     line-height: 14.5px;
     color: #006f4a;
     font-style: normal;
@@ -691,7 +696,7 @@ header {
   }
 
   .ls03 {
-    letter-spacing: 0.03px;
+    // letter-spacing: 0.03px;
   }
 
   .notes.secondary:before {
@@ -715,8 +720,8 @@ header {
   }
 
   #content table .parentNodes {
-    font-size: 9px;
-    line-height: 10px;
+    font-size: 10px;
+    line-height: 12px;
   }
   td,
   th {
@@ -727,7 +732,7 @@ header {
   .section4 {
     .hbold {
       font-family: HelveticaNeueLtMedium;
-      font-weight: 400;
+      font-weight: 300;
     }
   }
   h1 .sectionName {
@@ -739,28 +744,24 @@ header {
 }
 
 div[tabindex='-1'] {
-  position: absolute !important;
-  top: 30%;
-  width: 80%;
-  margin: 0 10%;
-
+  position: fixed !important;
+  top: 100px;
+  right: 45px;
   .modal-content {
-    box-shadow: 10px 5px 5px #cccccc;
+    border: 1px solid $subheader-green;
     background-color: #ffffff;
-    padding: 30px 30px 10px 30px;
-    position: relative;
-    .modal-body {
-      white-space: nowrap;
-      a {
-        img {
-          display: inline;
-          margin-right: 10px;
-          width: 48%;
-        }
+    padding: 20px 30px 10px 30px;
+    a {
+      img {
+        max-width: 200px;
+        display: inline;
+        margin-right: 10px;
       }
-      a:last-child {
-        margin-right: 0;
-      }
+    }
+  }
+  .modal-body {
+    a:last-child img {
+      margin-right: 0;
     }
   }
   .modal-header {
