@@ -5,7 +5,8 @@ import DownloadIcon from '../../assets/download-icon.png'
 import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap'
 import TenK from '../../assets/Hess_10Kcover.png'
 import ARCover from '../../assets/Hess_AR2017_Cover.png'
-import '../../assets/1721_Hess_AR2017_Promo1B.pdf'
+import ARPDF from '../../assets/1721_Hess_AR2017_Promo1B.pdf'
+import Hess10K from '../../assets/Hess_10Kcover.png'
 
 class ModalExample extends React.Component {
   constructor(props) {
@@ -39,15 +40,15 @@ class ModalExample extends React.Component {
           backdrop={false}
           className={this.props.className}
         >
-          <ModalHeader toggle={this.toggle}>
-            <span>Downloads</span>
-          </ModalHeader>
+          <ModalHeader toggle={this.toggle} />
           <ModalBody>
-            <a href="javascript: void(0);">
-              <img src={TenK} />
-            </a>
-            <a href="javascript: void(0);">
+            <a href={ARPDF} download="Hess 2017 Annual Report.pdf">
               <img src={ARCover} />
+              <span>Hess 2017 Annual Report</span>
+            </a>
+            <a href={Hess10K} download="Hess 2017 10-K.pdf">
+              <img src={TenK} />
+              <span>2017 Form 10-K</span>
             </a>
           </ModalBody>
         </Modal>

@@ -4,14 +4,14 @@ const FinancialData = props => {
   return (
     <div>
       <h1>
-        Financial and<br />Operational Highlights
+        Financial and<br />Operating Highlights
       </h1>
       <h3>HESS CORPORATION</h3>
       <h5>Amounts in millions, except per share data</h5>
       <table>
         <thead>
           <tr>
-            <th>Financial — for the year</th>
+            <th className="medium">Financial — for the year</th>
             <th>2017</th>
             <th>2016</th>
           </tr>
@@ -20,10 +20,10 @@ const FinancialData = props => {
           <tr>
             <td>Sales and other operating revenues</td>
             <td>
-              <span className="dollar">$</span>1,466
+              <span className="dollar">$</span>5,466
             </td>
             <td>
-              <span className="dollar">$</span>1,762
+              <span className="dollar">$</span>4,762
             </td>
           </tr>
           <tr>
@@ -31,15 +31,21 @@ const FinancialData = props => {
             <td>
               <span className="dollar">$</span>(4,074)
             </td>
-            <td>(6,132)</td>
+            <td>
+              <span className="dollar">$</span>(6,132)
+            </td>
           </tr>
           <tr>
             <td>
               Net income (loss) per share diluted{' '}
               <span className="super">(a)</span>
             </td>
-            <td>(13.12)</td>
-            <td>(19.92)</td>
+            <td>
+              <span className="dollar">$</span>(13.12)
+            </td>
+            <td>
+              <span className="dollar">$</span>(19.92)
+            </td>
           </tr>
           <tr>
             <td>Common stock dividends per share</td>
@@ -53,16 +59,16 @@ const FinancialData = props => {
           <tr>
             <td>Net cash provided by operating activities</td>
             <td>
-              <span className="dollar">$</span>145
+              <span className="dollar">$</span>945
             </td>
             <td>
-              <span className="dollar">$</span>195
+              <span className="dollar">$</span>795
             </td>
           </tr>
           <tr>
             <td>E&amp;P capital and exploratory expenditures</td>
             <td>
-              <span className="dollar">$</span>1,047
+              <span className="dollar">$</span>2,047
             </td>
             <td>
               <span className="dollar">$</span>1,871
@@ -74,7 +80,7 @@ const FinancialData = props => {
               <span className="dollar">$</span>121
             </td>
             <td>
-              <span className="dollar">$</span>183
+              <span className="dollar">$</span>283
             </td>
           </tr>
           <tr className="last-row">
@@ -83,7 +89,7 @@ const FinancialData = props => {
             <td>309.9</td>
           </tr>
           <tr>
-            <th>Financial — at year end</th>
+            <th className="medium">Financial — at year end</th>
             <th>2017</th>
             <th>2016</th>
           </tr>
@@ -91,28 +97,28 @@ const FinancialData = props => {
           <tr>
             <td>Total assets</td>
             <td>
-              <span className="dollar">$</span>13,112
+              <span className="dollar">$</span>23,112
             </td>
             <td>
-              <span className="dollar">$</span>18,621
+              <span className="dollar">$</span>28,621
             </td>
           </tr>
           <tr>
             <td>Cash and cash equivalents</td>
             <td>
-              <span className="dollar">$</span>1,847
+              <span className="dollar">$</span>4,847
             </td>
             <td>
-              <span className="dollar">$</span>1,732
+              <span className="dollar">$</span>2,732
             </td>
           </tr>
           <tr>
             <td>Total debt</td>
             <td>
-              <span className="dollar">$</span>1,977
+              <span className="dollar">$</span>6,977
             </td>
             <td>
-              <span className="dollar">$</span>1,806
+              <span className="dollar">$</span>6,806
             </td>
           </tr>
           <tr>
@@ -129,7 +135,7 @@ const FinancialData = props => {
               Debt to capitalization ratio <span className="super">(b)</span>
             </td>
             <td>
-              16.1<span className="percent">%</span>
+              36.1<span className="percent">%</span>
             </td>
             <td>
               30.4<span className="percent">%</span>
@@ -138,14 +144,14 @@ const FinancialData = props => {
           <tr className="last-row">
             <td>Common stock price</td>
             <td>
-              <span className="dollar">$</span>17.47
+              <span className="dollar">$</span>47.47
             </td>
             <td>
-              <span className="dollar">$</span>12.29
+              <span className="dollar">$</span>62.29
             </td>
           </tr>
           <tr>
-            <th>Operating — for the year</th>
+            <th className="medium">Operating — for the year</th>
             <th>2017</th>
             <th>2016</th>
           </tr>
@@ -168,7 +174,7 @@ const FinancialData = props => {
           </tr>
           <tr>
             <td className="indent twice">International</td>
-            <td>86</td>
+            <td>66</td>
             <td>70</td>
           </tr>
           <tr className="black">
@@ -177,18 +183,18 @@ const FinancialData = props => {
             <th>235</th>
           </tr>
           <tr>
-            <td>Natural gas (thousands of mcf per day)</td>
+            <td>Natural gas (thousands of MCF per day)</td>
             <td />
             <td />
           </tr>
           <tr>
             <td className="indent twice">United States</td>
             <td>211</td>
-            <td>309</td>
+            <td>258</td>
           </tr>
           <tr>
             <td className="indent twice">International</td>
-            <td>258</td>
+            <td>309</td>
             <td>265</td>
           </tr>
           <tr className="black">
@@ -196,7 +202,7 @@ const FinancialData = props => {
             <th>520</th>
             <th>523</th>
           </tr>
-          <tr>
+          <tr className="bottom-border">
             <td>Barrels of oil equivalent (thousands of barrels per day)</td>
             <td>306</td>
             <td>322</td>
@@ -205,12 +211,12 @@ const FinancialData = props => {
       </table>
       <div className="footer">
         <h6>
-          <span>(a)</span> Calculated as net income (loss) attributable to Hess
+          <span>(a)</span>Calculated as net income (loss) attributable to Hess
           Corporation less preferred stock dividends as applicable, divided by
-          weighted average number of diluted shares.
+          weighted average number<br />of diluted shares.
         </h6>
         <h6>
-          <span>(b)</span> Total debt as a percentage of the sum of total debt
+          <span>(b)</span>Total debt as a percentage of the sum of total debt
           and total equity.
         </h6>
       </div>

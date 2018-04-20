@@ -7,6 +7,7 @@ $text-width: 850px;
 $content-width: 650px;
 $page-hero-image-width: 950px;
 $menu-hover: #003c25;
+$arrow-image: url('../assets/arrow-on-off.png');
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
 
@@ -141,29 +142,60 @@ header {
       text-align: center;
     }
   }
-  nav ul {
-    list-style: none;
+  nav {
     background-color: $subheader-green;
-    font-size: 12px;
-    line-height: 13px;
-    display: flex;
-    justify-content: space-between;
-    padding: 0 65px;
-    li {
-      a {
-        color: #ffffff;
-        text-decoration: none;
-        display: table-cell;
-        vertical-align: bottom;
-        text-align: center;
-        padding: 10px;
-        width: 164px;
-        height: 46px;
-      }
-      a:hover,
-      &.current-page {
-        background-color: $menu-hover;
-        font-weight: bold;
+    ul {
+      list-style: none;
+      font-size: 12px;
+      line-height: 13px;
+      max-width: 933px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+      li {
+        a {
+          color: #ffffff;
+          text-decoration: none;
+          display: table-cell;
+          vertical-align: bottom;
+          text-align: center;
+          padding: 10px;
+          width: 164px;
+          height: 46px;
+          white-space: nowrap;
+          &.financial-highlights {
+            &:hover {
+              padding-left: 7px;
+              padding-right: 7px;
+            }
+          }
+          &.board-and-officers {
+            &:hover {
+              padding-left: 6.5px;
+              padding-right: 6.5px;
+            }
+          }
+        }
+        a:hover,
+        &.current-page {
+          background-color: $menu-hover;
+          font-weight: bold;
+        }
+        &.current-page {
+          a {
+            &.financial-highlights {
+              &:hover {
+                padding: 10px;
+              }
+            }
+            &.board-and-officers {
+              &:hover {
+                padding: 10px;
+              }
+            }
+          }
+        }
       }
     }
   }
@@ -219,6 +251,14 @@ header {
     max-width: $content-widest;
   }
   .company {
+    .arrow {
+      display: inline-block;
+      height: 15px;
+      width: 16px;
+      background-image: $arrow-image;
+      vertical-align: middle;
+      margin-left: 5px;
+    }
     .large {
       text-transform: uppercase;
       font-weight: 700;
@@ -259,21 +299,28 @@ header {
     }
     h4 {
       margin-bottom: 10px;
-      &:first-child {
-      }
     }
   }
 }
 
 .menu-button {
-  max-width: 100px;
+  max-width: 38px;
 }
 
 .logo {
+  height: 54px;
+  width: 90px;
   img {
     height: 54px;
     width: 90px;
+    margin: 0;
+    padding: 0;
   }
+}
+
+#dload {
+  width: 102px;
+  height: 48px;
 }
 
 .inner-content {
@@ -306,20 +353,10 @@ header {
         height: 50px;
         font-size: 16px;
         vertical-align: middle;
-        &:after {
-          content: '\279E';
-          display: inline-block;
-          // background-color: $header-green
-          font-size: 18px;
-          padding-left: 5px;
-          transform: scale(0.8, 1.2);
-          vertical-align: middle;
-          color: $header-green;
-        }
         &:hover {
           position: relative;
-          &:after {
-            color: $subheader-green;
+          .arrow {
+            background-position: bottom;
           }
           &:before {
             content: ' ';
@@ -377,6 +414,12 @@ header {
   max-width: $content-width;
   margin: 0 auto;
   padding-bottom: 100px;
+  h1 {
+    margin-bottom: 0;
+  }
+  h5 {
+    margin-bottom: 4px;
+  }
   table {
     font-size: 16px;
     line-height: 26px;
@@ -387,16 +430,20 @@ header {
       border-top: 1px solid $header-green;
       border-bottom: 1px solid $header-green;
     }
+    .bottom-border td {
+      border-bottom: 1px solid $header-green;
+    }
     th,
     td {
       color: $header-green;
       text-align: right;
       padding-right: 20px;
+      width: 93px;
       white-space: nowrap;
       font-family: HelveticaNeueLtMedium;
     }
     .percent {
-      margin-right: -10px;
+      margin-right: -15px;
     }
     .dollar {
       float: left;
@@ -408,13 +455,18 @@ header {
       width: auto;
       font-family: HelveticaNeueLT;
     }
+    thead th:first-child,
+    th.medium {
+      color: $header-green;
+      font-family: HelveticaNeueLtMedium;
+    }
     th:last-child {
       color: #000000;
     }
     th:last-child,
     td:last-child {
-      padding-right: 20px;
-      width: 115px;
+      padding-right: 28px;
+      width: 94px;
       font-family: HelveticaNeueLT;
     }
     td {
@@ -435,6 +487,9 @@ header {
   }
   h6 {
     font-size: 12px;
+    span {
+      margin-right: 4px;
+    }
   }
   .footer {
     padding-left: 20px;
@@ -479,9 +534,9 @@ header {
         max-width: 200px;
       }
     }
-  }
-  .QuigSig {
-    border-right: 1px solid $header-green;
+    .date {
+      margin-top: 30px;
+    }
   }
 }
 
@@ -535,7 +590,7 @@ header {
     color: #ffffff;
     bottom: 45px;
     left: 15px;
-    font-family: HelveticaNeueLTStdItalics, 'sans-serif';
+    font-family: HelveticaNeueRoman, 'sans-serif';
   }
   &.two,
   &.three {
@@ -571,11 +626,26 @@ header {
 }
 
 .board {
-  h2 {
+  h2,
+  div.section4.sectionName.sn0 .hbold {
     color: #000000;
     font-size: 21px;
     font-family: HelveticaNeueLtMedium;
+    margin-bottom: 9px;
   }
+
+  .table {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    .row {
+      display: table-row;
+      .td {
+        display: table-cell;
+      }
+    }
+  }
+
   #content div {
     margin-bottom: 0;
   }
@@ -589,7 +659,7 @@ header {
   }
 
   .memberNameParent {
-    margin-top: 12px;
+    margin-top: 18px;
   }
 
   .sec {
@@ -597,6 +667,9 @@ header {
     line-height: 18px;
     color: #000;
     padding: 6px 0 0;
+  }
+  .sec.hlight.italic.members p {
+    line-height: 22px;
   }
 
   .section0 .sn0,
@@ -612,7 +685,6 @@ header {
   }
 
   #content .section4.sectionName > span {
-    font-size: 16px;
     color: #000000;
   }
 
@@ -647,11 +719,6 @@ header {
     padding-top: 50px;
   }
 
-  .section0,
-  .section4,
-  .section7 {
-    width: 100%;
-  }
   .section7 {
     margin-top: 20px;
   }
@@ -678,7 +745,6 @@ header {
   .memberName,
   .subName {
     font-size: 21px;
-    line-height: 14.5px;
     color: #006f4a;
     font-style: normal;
   }
@@ -695,33 +761,23 @@ header {
     margin-right: 0.2em;
   }
 
-  .ls03 {
-    // letter-spacing: 0.03px;
-  }
-
   .notes.secondary:before {
     content: '(3) ';
     visibility: hidden;
   }
 
-  .section0,
-  .boardSection {
-    float: left;
-  }
-
-  .section0 {
-    width: 300px;
-  }
-  .boardSection {
-    width: 300px;
-  }
   .firstNote {
     margin-top: 8px;
   }
 
   #content table .parentNodes {
     font-size: 10px;
-    line-height: 12px;
+    line-height: 10px;
+    margin-top: 5.5px;
+    &.sec69,
+    &.sec67 {
+      margin-top: 1px;
+    }
   }
   td,
   th {
@@ -743,15 +799,42 @@ header {
   }
 }
 
-div[tabindex='-1'] {
-  position: fixed !important;
-  top: 100px;
-  right: 45px;
+/* Modal */
+.modal-open {
+  .header,
+  .wrapper {
+    opacity: 0.3;
+  }
+}
+div[tabindex='-1']:not([role='dialog']) {
+  position: absolute !important;
+  display: table;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  outline: none;
+  align-content: center;
+  & > div {
+    display: table-row;
+    height: 100%;
+  }
+  div:focus {
+    outline: none;
+  }
+  div[role='dialog'] {
+    display: table-cell !important;
+    vertical-align: middle;
+  }
+
   .modal-content {
-    border: 1px solid $subheader-green;
-    background-color: #ffffff;
-    padding: 20px 30px 10px 30px;
+    background-color: #e2e2e2;
+    padding: 30px;
+    max-width: 700px;
+    margin: 0 auto;
+
     a {
+      padding: 20px;
       img {
         max-width: 200px;
         display: inline;
@@ -760,26 +843,90 @@ div[tabindex='-1'] {
     }
   }
   .modal-body {
+    white-space: nowrap;
+    a {
+      display: inline-block;
+      font-family: HelveticaNeueLtMedium;
+      color: $header-green;
+      text-decoration: none;
+      &:hover {
+        text-decoration: underline;
+        color: $subheader-green;
+      }
+    }
+    a span {
+      text-align: center;
+      display: block;
+    }
     a:last-child img {
       margin-right: 0;
     }
   }
   .modal-header {
+    position: relative;
     h5 {
       text-align: center;
       font-size: 34px;
-      border-bottom: 1px solid $header-green;
       margin-bottom: 30px;
       padding-bottom: 10px;
     }
     button {
       position: absolute;
-      right: 5px;
-      top: 5px;
-      background-color: #ffffff;
+      right: 0px;
+      top: -10px;
+      height: 40px;
+      background-color: #e2e2e2;
       border: none;
       font-size: 40px;
+      outline: none;
+      span {
+        height: 40px;
+      }
     }
     margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .company .inner-content,
+  .financial > div,
+  .shareholders.text-content,
+  .global .inner-content,
+  .sustainability .inner-content,
+  .board table {
+    margin-left: 2%;
+    margin-right: 2%;
+  }
+  .board table {
+    max-width: 100%;
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 765px) {
+  .board {
+    .table {
+      .td {
+        border-right: 10px solid #ffffff;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 730px) {
+  .board {
+    .table {
+      .td {
+        border-right: 10px solid #ffffff;
+      }
+    }
+  }
+  header nav ul {
+    flex-direction: column;
+    li {
+      a {
+        text-align: left;
+      }
+    }
   }
 }

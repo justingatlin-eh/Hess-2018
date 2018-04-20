@@ -1,6 +1,6 @@
 import React from 'react'
 import { navigateTo } from 'gatsby-link'
-import HomeHero from '../assets/splash-hero.png'
+import HomeHero from '../assets/splash-page-image.jpg'
 
 const IndexPage = () => {
   function goTo() {

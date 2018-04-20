@@ -1,8 +1,9 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import MainContent from '../components/MainContent'
-import img1 from '../assets/our-company-global-operations.png'
-import img2 from '../assets/our-company-sawyer1.png'
+import img1 from '../assets/first-gas-small.jpg'
+import img2 from '../assets/Sawyer-v2-small.jpg'
+import ArrowOnOff from '../assets/arrow-on-off.png'
 
 const CompanyPage = props => {
   function key() {
@@ -19,10 +20,14 @@ const CompanyPage = props => {
         {arr.map(val => <MainContent key={key()} content={val} />)}
         <div className="content buttons">
           <Link to="/letter-to-shareholders">
-            <button>Letter to Shareholders</button>
+            <button>
+              Letter to Shareholders<span className="arrow">&nbsp;</span>
+            </button>
           </Link>
           <Link to="/financial-highlights">
-            <button>Financial Highlights</button>
+            <button>
+              Financial Highlights<span className="arrow">&nbsp;</span>
+            </button>
           </Link>
         </div>
       </div>

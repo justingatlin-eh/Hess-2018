@@ -7,7 +7,11 @@ const LinkList = props => {
   const isCurrentPage = props.currentlocation == props.to ? 'current-page' : ''
   return (
     <li className={isCurrentPage}>
-      <Link onClick={e => toggleMenu(e)} to={`${props.to}`}>
+      <Link
+        className={props.to.replace('/', '')}
+        onClick={e => toggleMenu(e)}
+        to={`${props.to}`}
+      >
         {props.children}
       </Link>
     </li>
