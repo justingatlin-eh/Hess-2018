@@ -8,45 +8,58 @@ $content-width: 650px;
 $page-hero-image-width: 950px;
 $menu-hover: #003c25;
 $arrow-image: url('../assets/arrow-on-off.png');
+$DesktopSplash: url('../assets/splash-page-image.jpg');
+$MobileSplash: url('../assets/Mobile-Splash.jpg');
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
 @font-face {
   font-family: 'Gotham-Medium';
-  src: url('Gotham-Medium') format('truetype'); /* Safari, Android, iOS */
+  src: url('Gotham-Medium') format('truetype');
+  /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: 'HelveticaNeueBold';
-  src: url('HelveticaNeueLTStd-Bd.otf') format('truetype'); /* Safari, Android, iOS */
+  src: url('HelveticaNeueLTStd-Bd.otf') format('truetype');
+  /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: 'HelveticaNeueLTStdItalics';
-  src: url('HelveticaNeueLTStd-It.otf') format('truetype'); /* Safari, Android, iOS */
+  src: url('HelveticaNeueLTStd-It.otf') format('truetype');
+  /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: 'HelveticaNeueHv';
-  src: url('HelveticaNeueLTStd-Hv.otf') format('truetype'); /* Safari, Android, iOS */
+  src: url('HelveticaNeueLTStd-Hv.otf') format('truetype');
+  /* Safari, Android, iOS */
 }
+
 @font-face {
   font-family: 'HelveticaNeueLtMedium';
-  src: url('HelveticaNeueLTStd-Md.otf') format('truetype'); /* Safari, Android, iOS */
+  src: url('HelveticaNeueLTStd-Md.otf') format('truetype');
+  /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: 'HelveticaNeueRoman';
-  src: url('HelveticaNeueLTStd-Roman.otf') format('truetype'); /* Safari, Android, iOS */
+  src: url('HelveticaNeueLTStd-Roman.otf') format('truetype');
+  /* Safari, Android, iOS */
 }
 
 @font-face {
   font-family: 'HelveticaNeueLT';
-  src: url('HelveticaNeueLTStd-Lt.otf') format('truetype'); /* Safari, Android, iOS */
+  src: url('HelveticaNeueLTStd-Lt.otf') format('truetype');
+  /* Safari, Android, iOS */
 }
 
 body {
   padding: 0 !important;
+  position: relative;
+  &[data-isopen='true'] {
+    opacity: 0.4;
+  }
 }
 
 body,
@@ -84,6 +97,7 @@ body {
   font-family: 'Montserrat', HelveticaNeueLt, 'Gotham', 'Franklin Gothic Medium',
     'Arial Narrow', Arial, sans-serif;
 }
+
 h1 {
   font-family: HelveticaNeueBold;
   font-size: 40px;
@@ -94,6 +108,7 @@ h1 {
   border-bottom: 1px solid $header-green;
   color: $header-green;
 }
+
 h2 {
   color: $header-green;
 }
@@ -105,14 +120,17 @@ h2 {
 h4 {
   font-family: HelveticaNeueLtMedium;
 }
+
 td {
   font-family: 'HelveticaNeueLT', 'HelveticaNeue', 'Helvetica', 'Gotham',
     'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .page-head-img {
   text-align: center;
   margin-bottom: 50px;
 }
+
 h3 {
   font-size: 13px;
   line-height: 30px;
@@ -125,10 +143,23 @@ h4 {
   color: $header-green;
 }
 
+a:focus,
+button:focus {
+  outline: none;
+}
+
 span.super {
   font-size: x-small;
   position: relative;
   top: -6px;
+}
+
+.site-footer {
+  text-align: center;
+  background-color: #e9e7e7;
+  margin-top: 50px;
+  font-size: 14px;
+  line-height: 28px;
 }
 
 header {
@@ -207,7 +238,6 @@ header {
   color: white;
   margin-left: auto;
   margin-right: auto;
-  max-width: 1348px;
   &:hover {
     cursor: pointer;
   }
@@ -250,6 +280,9 @@ header {
   & > div {
     max-width: $content-widest;
   }
+  & > .splash {
+    max-width: none;
+  }
   .company {
     .arrow {
       display: inline-block;
@@ -271,8 +304,12 @@ header {
         padding-top: 40px;
         margin-top: 120px;
       }
+      .content.buttons {
+        margin-top: 40px;
+      }
       .content {
         max-width: 100%;
+        margin-top: 25px;
       }
     }
   }
@@ -319,8 +356,6 @@ header {
 }
 
 #dload {
-  width: 102px;
-  height: 48px;
 }
 
 .inner-content {
@@ -375,13 +410,14 @@ header {
 
 .image-container {
   margin-top: 50px;
-  white-space: nowrap;
+  display: table;
   text-align: center;
-  white-space: nowrap;
-  a {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  .a {
     position: relative;
-    display: inline-block;
-    width: 50%;
+    display: table-cell;
     & > span {
       position: absolute;
       vertical-align: middle;
@@ -400,9 +436,11 @@ header {
       position: relative;
       z-index: 1;
     }
-
     &:hover {
       cursor: pointer;
+      img {
+        opacity: 0.6;
+      }
       span {
         z-index: 1;
       }
@@ -525,7 +563,6 @@ header {
     }
     & > div {
       display: inline-block;
-
       &:first-child {
         padding-right: 35px;
         margin-right: 35px;
@@ -550,6 +587,7 @@ header {
   margin-right: auto;
   margin-top: 0;
 }
+
 .global {
   h1 {
     margin-top: 0;
@@ -560,16 +598,17 @@ header {
     }
   }
 }
+
 .download-button {
   &:hover {
     cursor: pointer;
   }
-
   img {
     width: 102px;
     height: 48px;
   }
 }
+
 .container.download {
   background-color: #ffffff;
   .ui-dialog-content {
@@ -577,6 +616,7 @@ header {
     padding: 5px;
   }
 }
+
 .menu img {
   width: 43px;
   height: 43px;
@@ -633,7 +673,6 @@ header {
     font-family: HelveticaNeueLtMedium;
     margin-bottom: 9px;
   }
-
   .table {
     display: table;
     table-layout: fixed;
@@ -645,23 +684,18 @@ header {
       }
     }
   }
-
   #content div {
     margin-bottom: 0;
   }
-
   .boardSection .sec {
     padding: 0;
   }
-
   .italic {
     font-style: italic;
   }
-
   .memberNameParent {
     margin-top: 18px;
   }
-
   .sec {
     font-size: 16px;
     line-height: 18px;
@@ -671,54 +705,44 @@ header {
   .sec.hlight.italic.members p {
     line-height: 22px;
   }
-
   .section0 .sn0,
   .section1 .bs0 .sec1 {
     padding-top: 10px;
   }
-
   #content div.sectionName,
   #content .section1 .bs0 .sec1 .memberName,
   .section4.sectionName > span {
     color: #00704a;
     font-size: 16px;
   }
-
   #content .section4.sectionName > span {
     color: #000000;
   }
-
   #content div.sec.subName {
     margin-bottom: 6px;
   }
-
   #content .section0 > div.sectionName {
     margin-bottom: 15px;
     color: #000000;
   }
-
   #content .section2 .members .simpleName,
   #content .section3 .members .simpleName {
     display: block;
     padding-top: 6px;
   }
-
   .section3 .affiliate,
   .section2 .affiliate {
     text-indent: 3px;
     font-size: 11px;
     margin-top: -2px;
   }
-
   .sectionName {
     margin-bottom: 15px;
   }
-
   .section4 {
     clear: left;
     padding-top: 50px;
   }
-
   .section7 {
     margin-top: 20px;
   }
@@ -728,27 +752,22 @@ header {
     padding-bottom: 10px;
     color: #000000;
   }
-
   .section4 > span {
     padding-bottom: 15px;
   }
-
   .memberNameParent .memberName {
     padding-right: 2px;
   }
-
   .affiliate {
     display: block;
     line-height: 18px;
   }
-
   .memberName,
   .subName {
     font-size: 21px;
     color: #006f4a;
     font-style: normal;
   }
-
   .star:before {
     content: '*';
     margin-left: -5px;
@@ -760,16 +779,13 @@ header {
     font-size: 10px;
     margin-right: 0.2em;
   }
-
   .notes.secondary:before {
     content: '(3) ';
     visibility: hidden;
   }
-
   .firstNote {
     margin-top: 8px;
   }
-
   #content table .parentNodes {
     font-size: 10px;
     line-height: 10px;
@@ -800,90 +816,66 @@ header {
 }
 
 /* Modal */
-.modal-open {
-  .header,
-  .wrapper {
-    opacity: 0.3;
-  }
-}
-div[tabindex='-1']:not([role='dialog']) {
-  position: absolute !important;
-  display: table;
-  top: 0px;
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
   width: 100%;
   height: 100%;
-  text-align: center;
-  outline: none;
-  align-content: center;
-  & > div {
-    display: table-row;
-    height: 100%;
-  }
-  div:focus {
-    outline: none;
-  }
-  div[role='dialog'] {
-    display: table-cell !important;
-    vertical-align: middle;
-  }
+}
 
-  .modal-content {
-    background-color: #e2e2e2;
-    padding: 30px;
-    max-width: 700px;
-    margin: 0 auto;
+[data-modalopen='true'] {
+  opacity: 0.5;
+}
 
-    a {
-      padding: 20px;
-      img {
-        max-width: 200px;
-        display: inline;
-        margin-right: 10px;
-      }
-    }
+.modal {
+  border: none;
+  border-spacing: 0;
+  margin: 0;
+  &[data-isopen='true'] {
+    display: table;
   }
-  .modal-body {
-    white-space: nowrap;
-    a {
-      display: inline-block;
-      font-family: HelveticaNeueLtMedium;
-      color: $header-green;
-      text-decoration: none;
-      &:hover {
-        text-decoration: underline;
-        color: $subheader-green;
+  tbody {
+    td {
+      .close {
+        position: absolute;
+        top: 8px;
+        right: 10px;
+        font-size: 38px;
+        &:hover {
+          cursor: pointer;
+        }
       }
-    }
-    a span {
+      .modal-body {
+        position: relative;
+        display: inline-block;
+        background-color: #f3f2f2;
+        padding: 50px;
+      }
       text-align: center;
-      display: block;
-    }
-    a:last-child img {
-      margin-right: 0;
-    }
-  }
-  .modal-header {
-    position: relative;
-    h5 {
-      text-align: center;
-      font-size: 34px;
-      margin-bottom: 30px;
-      padding-bottom: 10px;
-    }
-    button {
-      position: absolute;
-      right: 0px;
-      top: -10px;
-      height: 40px;
-      background-color: #e2e2e2;
       border: none;
-      font-size: 40px;
-      outline: none;
-      span {
-        height: 40px;
+      &:after:hover {
+        cursor: pointer;
+      }
+      a {
+        display: inline-block;
+        font-family: HelveticaNeueLtMedium;
+        color: $header-green;
+        text-decoration: none;
+        padding: 10px 10px 0px 10px;
+
+        img {
+          max-width: 300px;
+          margin: 0;
+          display: block;
+          margin-bottom: 16px;
+        }
+        &:hover {
+          text-decoration: underline;
+          color: $subheader-green;
+        }
       }
     }
-    margin-bottom: 10px;
   }
 }
 
@@ -893,21 +885,37 @@ div[tabindex='-1']:not([role='dialog']) {
   .shareholders.text-content,
   .global .inner-content,
   .sustainability .inner-content,
-  .board table {
-    margin-left: 2%;
-    margin-right: 2%;
-  }
-  .board table {
-    max-width: 100%;
-    width: auto;
+  .board #innerWrapper {
+    margin-left: 5%;
+    margin-right: 5%;
   }
 }
 
-@media screen and (max-width: 765px) {
+@media screen and (max-width: 768px) {
+  .modal {
+    position: absolute;
+    top: 0;
+    left: 0;
+    tbody {
+      td {
+        a {
+          img {
+            max-width: 100%;
+          }
+        }
+      }
+    }
+  }
   .board {
-    .table {
-      .td {
-        border-right: 10px solid #ffffff;
+    .main.container {
+      .table {
+        .row {
+          .td {
+            &.boardSection.bs1 {
+              width: 30%;
+            }
+          }
+        }
       }
     }
   }
@@ -923,10 +931,252 @@ div[tabindex='-1']:not([role='dialog']) {
   }
   header nav ul {
     flex-direction: column;
+    font-size: 13px;
     li {
       a {
-        text-align: left;
+        width: 100%;
+        text-align: center;
+        display: block;
+        line-height: 23px;
+        .br {
+          display: inline;
+          &:after {
+            content: ' ';
+          }
+        }
       }
     }
   }
+}
+
+@media screen and (max-width: 667px) {
+  .company {
+    .content {
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 675px) {
+  h1 {
+    margin-top: 50px;
+  }
+  .company .inner-content {
+    .content.buttons {
+      button {
+        width: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 568px) {
+  .wrapper {
+    .company {
+      .inner-content {
+        .content:first-child {
+          margin-top: 60px;
+        }
+      }
+    }
+  }
+  .company {
+    .image-container {
+      display: block;
+      .a {
+        display: block;
+        &:first-child {
+          margin-bottom: 25px;
+        }
+        span {
+          position: relative;
+          display: inline-block;
+        }
+      }
+    }
+    .inner-content {
+      .content.buttons {
+        display: block;
+        a button {
+          width: 100%;
+        }
+        a:last-child button {
+          margin-top: 10px;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  .shareholders .signatures {
+    margin-top: 0;
+    img {
+      margin-bottom: 0;
+    }
+  }
+  .financial {
+    table {
+      thead {
+        th {
+          padding-top: 2px;
+        }
+        &:last-child {
+          line-height: 24px;
+        }
+      }
+      th,
+      td {
+        white-space: normal;
+      }
+      td:first-child {
+        line-height: 22px;
+        padding-bottom: 8px;
+      }
+      td {
+        width: 24%;
+      }
+      tbody {
+        td {
+          vertical-align: top;
+          &:first-child {
+            vertical-align: middle;
+          }
+        }
+      }
+      th:last-child,
+      td:last-child {
+        padding-right: 5px;
+      }
+      td:last-child {
+        width: 20%;
+      }
+      .percent {
+        margin-right: -12px;
+      }
+      .dollar {
+        margin-right: 5px;
+      }
+    }
+    .indent.once {
+      text-indent: 0;
+      padding-left: 5px;
+    }
+    .bottom-border {
+      td:first-child {
+        padding-bottom: 3px;
+      }
+    }
+  }
+  header {
+    width: 100%;
+    > div {
+      padding: 0;
+      display: block;
+      justify-content: unset;
+      max-height: none;
+      > div {
+        display: inline-block;
+        width: 29% !important;
+        max-width: none !important;
+        text-align: center;
+        vertical-align: top;
+        padding: 20px 0;
+        &.logo {
+          width: 42% !important;
+        }
+        img {
+          margin: 0;
+        }
+      }
+    }
+  }
+  .board {
+    .br {
+      display: inline;
+      &:after {
+        content: ' ';
+      }
+    }
+    #innerWrapper {
+      .table {
+        display: block;
+        .row {
+          display: block;
+          .td {
+            display: block;
+            width: 100%;
+            &.section2,
+            &.section3 {
+              margin-top: 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .financial {
+    table {
+      thead {
+        vertical-align: middle;
+        line-height: 18px;
+      }
+      tbody {
+        th {
+          vertical-align: middle;
+          line-height: 18px;
+          padding-top: 2px;
+          padding-bottom: 2px;
+        }
+      }
+      th,
+      td {
+        padding-right: 8px;
+        width: 24%;
+      }
+      td:first-child {
+        padding-right: 2px;
+      }
+      td:last-child {
+        width: 23%;
+        padding-right: 6px;
+      }
+      .percent {
+        margin-right: -12px;
+      }
+      .dollar {
+        margin-right: 5px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .financial {
+    table {
+      .dollar {
+        margin-right: 2px;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 765px) {
+  //min = anything smaller disappears
+  //max = anything bigger disappears
+  .wrapper {
+    .splash {
+      height: 100%;
+      width: 100%;
+      .main-image {
+        &:before {
+          content: $DesktopSplash;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 765px) {
 }

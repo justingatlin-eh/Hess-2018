@@ -25,19 +25,19 @@ export default props => {
         Our Company
       </LinkList>
       <LinkList currentlocation={props.location} to="/financial-highlights">
-        Financial and<br />Operational Highlights
+        Financial and<div className="br" />Operational Highlights
       </LinkList>
       <LinkList currentlocation={props.location} to="/letter-to-shareholders">
-        Letter to<br />Shareholders
+        Letter to<div className="br" />Shareholders
       </LinkList>
       <LinkList currentlocation={props.location} to="/global-operations">
-        Global<br />Operations
+        Global<div className="br" />Operations
       </LinkList>
       <LinkList currentlocation={props.location} to="/sustainability">
         Sustainablity
       </LinkList>
       <LinkList currentlocation={props.location} to="/board-and-officers">
-        Board of Directors and<br />Corporate Officers
+        Board of Directors and<div className="br" />Corporate Officers
       </LinkList>
     </ul>
   )

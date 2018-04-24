@@ -4,8 +4,8 @@ import logo from '../../assets/hess-logo-white.png'
 
 export default () => (
   <div className="logo">
-    <a href="http://hess.com">
+    <Link to="/">
       <img src={logo} alt="Logo" />
-    </a>
+    </Link>
   </div>
 )

@@ -4,7 +4,7 @@ import dangerousHTML from './Helpers'
 const Board = props => {
   return (
     <div className="board">
-      <table id="main container">
+      <table className="main container">
         <tbody>
           <tr>
             <td id="content">
@@ -14,7 +14,7 @@ const Board = props => {
                     <td>
                       <div id="innerWrapper" className="ls03 hlight">
                         <h1 className="sectionName hbold sn0 ">
-                          Hess<br />Corporation
+                          Hess<div className="br" />Corporation
                         </h1>
                         <h2>Board of Directors</h2>
                         <div className="table">

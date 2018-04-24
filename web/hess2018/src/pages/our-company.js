@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import { navigateTo } from 'gatsby-link'
 import MainContent from '../components/MainContent'
 import img1 from '../assets/first-gas-small.jpg'
 import img2 from '../assets/Sawyer-v2-small.jpg'
@@ -13,6 +14,10 @@ const CompanyPage = props => {
     '<span class="first"><span class="large">Hess Corporation</span> is a leading global independent energy company engaged in the exploration and production of crude oil and natural gas.</span>',
     'We are committed to meeting the highest standards of corporate citizenship by protecting the health and safety of our employees, safeguarding the environment and making a positive impact on the communities in which we do business.',
   ]
+
+  const tagClicked = url => {
+    navigateTo(url)
+  }
 
   return (
     <div className="company">
@@ -32,18 +37,18 @@ const CompanyPage = props => {
         </div>
       </div>
       <div className="image-container">
-        <Link to="/global-operations">
+        <span className="a" onClick={() => tagClicked('/global-operations')}>
           <img src={img1} />
           <span>
-            <span>Global Operation</span>
+            <span>Global Operations</span>
           </span>
-        </Link>
-        <Link to="/sustainability">
+        </span>
+        <span className="a" onClick={() => tagClicked('/sustainability')}>
           <img src={img2} />
           <span>
             <span>Sustainability</span>
           </span>
-        </Link>
+        </span>
       </div>
     </div>
   )
