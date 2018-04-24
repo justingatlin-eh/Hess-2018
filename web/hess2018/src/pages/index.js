@@ -15,7 +15,6 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount() {
-    console.log('componentDidMount', this)
     this.timer = setTimeout(this.changeOpa, 2500)
   }
 
