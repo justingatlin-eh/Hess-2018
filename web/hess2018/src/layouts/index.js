@@ -35,10 +35,13 @@ class TemplateWrapper extends React.Component {
     this.toggleModal = this.toggleModal.bind(this)
 
     this.pageClass = this.isSplash ? 'hero' : 'wrapper'
+    this.uaObj = this.uaObj.bind(this)
+    this.ua = null
   }
 
   componentDidMount() {
     window.addEventListener('resize', this.updateWindowDimensions)
+    this.ua = window.navigator.userAgent
     this.updateWindowDimensions()
   }
 
@@ -49,6 +52,13 @@ class TemplateWrapper extends React.Component {
     const height = window.innerHeight
     const isPortrait = height >= width
     this.setState(prevState => ({ width, height, isPortrait, isMobile }))
+  }
+
+  uaObj() {
+    const ua = this.ua
+    const isIE = /Trident/i.test(ua)
+    const isFireFox = /FireFox/i.test(ua)
+    return { isIE, isFireFox }
   }
 
   toggleModal(s) {
@@ -102,10 +112,15 @@ class TemplateWrapper extends React.Component {
 
   render() {
     const myprops = this.myprops(this.state)
+    const obj = this.uaObj()
+    const isFireFox = obj.isFireFox
+    const isIE = obj.isIE
     return (
       <div
         data-ismobile={this.state.isMobile}
         data-isportrait={this.state.isPortrait}
+        data-isie={isIE}
+        data-isfirefox={obj.isFireFox}
       >
         <Helmet>
           <title>Hess Annual Report</title>

@@ -11,7 +11,12 @@ $arrow-image: url('../assets/arrow-on-off.png');
 $DesktopSplash: url('../assets/splash-page-image.jpg');
 $MobileSplash: url('../assets/Mobile-Splash.jpg');
 
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+@font-face {
+  font-family: 'Montserrat';
+  src: local('Montserrat'),
+    url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+}
+
 @font-face {
   font-family: 'Gotham-Medium';
   src: url('Gotham-Medium') format('truetype');
@@ -98,8 +103,15 @@ body {
     'Arial Narrow', Arial, sans-serif;
 }
 
+@font-face {
+  font-family: 'Arial Bold';
+  src: local('Arial Bold'), local('arialbd');
+  font-weight: normal;
+  font-style: normal;
+}
+
 h1 {
-  font-family: HelveticaNeueBold;
+  font-family: HelveticaNeueBold, Montserrat, 'Arial Bold';
   font-size: 40px;
   line-height: 44px;
   margin-top: 140px;
@@ -118,7 +130,7 @@ h2 {
 }
 
 h4 {
-  font-family: HelveticaNeueLtMedium;
+  font-family: HelveticaNeueLtMedium, 'Montserrat', Arial;
 }
 
 td {
@@ -324,7 +336,7 @@ header {
     p {
       font-size: 18px;
       line-height: 26px;
-      font-family: HelveticaNeueLtMedium;
+      font-family: HelveticaNeueLtMedium, 'Montserrat', Arial;
     }
   }
   section {
@@ -475,7 +487,7 @@ header {
       padding-right: 20px;
       width: 93px;
       white-space: nowrap;
-      font-family: HelveticaNeueLtMedium;
+      font-family: HelveticaNeueLtMedium, 'Montserrat', Arial;
     }
     .percent {
       margin-right: -15px;
@@ -488,12 +500,12 @@ header {
       text-align: left;
       color: #000000;
       width: auto;
-      font-family: HelveticaNeueLT;
+      font-family: HelveticaNeueLT, 'Montserrat' Arial;
     }
     thead th:first-child,
     th.medium {
       color: $header-green;
-      font-family: HelveticaNeueLtMedium;
+      font-family: HelveticaNeueLtMedium, 'Montserrat', Arial;
     }
     th:last-child {
       color: #000000;
@@ -502,7 +514,7 @@ header {
     td:last-child {
       padding-right: 28px;
       width: 94px;
-      font-family: HelveticaNeueLT;
+      font-family: HelveticaNeueLT 'Montserrat', Arial;
     }
     td {
       border-bottom: none;
@@ -553,7 +565,7 @@ header {
   .signatures {
     margin-top: 80px;
     .name {
-      font-family: 'HelveticaNeueLtMedium', 'sans-serif';
+      font-family: 'HelveticaNeueLtMedium', 'Montserrat', Arial, 'sans-serif';
       font-weight: bold;
     }
     & > div {
@@ -625,7 +637,7 @@ header {
     color: #ffffff;
     bottom: 45px;
     left: 15px;
-    font-family: HelveticaNeueRoman, 'sans-serif';
+    font-family: HelveticaNeueRoman, 'Montserrat', Arial 'sans-serif';
   }
   &.two,
   &.three {
@@ -665,7 +677,7 @@ header {
   div.section4.sectionName.sn0 .hbold {
     color: #000000;
     font-size: 21px;
-    font-family: HelveticaNeueLtMedium;
+    font-family: HelveticaNeueLtMedium, 'Montserrat', Arial;
     margin-bottom: 9px;
   }
   .table {
@@ -798,7 +810,7 @@ header {
   .boardSection,
   .section4 {
     .hbold {
-      font-family: HelveticaNeueLtMedium;
+      font-family: HelveticaNeueLtMedium, 'Montserrat', Arial;
       font-weight: 300;
     }
   }
@@ -854,7 +866,7 @@ header {
       }
       a {
         display: inline-block;
-        font-family: HelveticaNeueLtMedium;
+        font-family: HelveticaNeueLtMedium, 'Montserrat', Arial;
         color: $header-green;
         text-decoration: none;
         padding: 10px 10px 0px 10px;
@@ -1173,5 +1185,11 @@ header {
   }
 }
 
-@media screen and (max-width: 765px) {
+[data-isie='true'] {
+  //font-family: 'Arial Bold';
+  font-weight: normal !important;
+}
+
+a:focus {
+  outline: none !important;
 }

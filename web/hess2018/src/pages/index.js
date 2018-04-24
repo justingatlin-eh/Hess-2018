@@ -30,14 +30,18 @@ class IndexPage extends React.Component {
       clearTimeout(this.timer2)
       //console.log('stopped timer2')
     }
-    this.setState(prevState => ({ opa: prevState.opa - 0.038 }))
-    if (this.state.opa <= 0) {
-      //console.log('done opa')
+    try {
+      this.setState(prevState => ({ opa: prevState.opa - 0.038 }))
+      if (this.state.opa <= 0) {
+        //console.log('done opa')
+        clearTimeout(this.timer2)
+        this.goTo()
+        return
+      }
+      this.timer2 = setTimeout(this.changeOpa, 100)
+    } catch (e) {
       clearTimeout(this.timer2)
-      this.goTo()
-      return
     }
-    this.timer2 = setTimeout(this.changeOpa, 100)
     //console.log('opa complete', this.state.opa)
   }
 
