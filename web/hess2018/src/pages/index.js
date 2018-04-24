@@ -20,6 +20,7 @@ class IndexPage extends React.Component {
 
   goTo = () => {
     // Needs to fade
+    clearTimeout(this.timer2)
     navigateTo('/our-company')
   }
 
@@ -43,6 +44,11 @@ class IndexPage extends React.Component {
       clearTimeout(this.timer2)
     }
     //console.log('opa complete', this.state.opa)
+  }
+
+  componentDidUpdate() {
+    //console.log('component unmounted')
+    clearTimeout(this.timer2)
   }
 
   componentWillUnmount() {

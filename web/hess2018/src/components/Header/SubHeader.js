@@ -4,7 +4,8 @@ import constants from './Constants'
 import { toggleMenu } from './CustomEvents'
 
 const LinkList = props => {
-  const isCurrentPage = props.currentlocation == props.to ? 'current-page' : ''
+  const re = new RegExp(props.currentlocation, 'i')
+  const isCurrentPage = re.test(props.to) ? 'current-page' : ''
   return (
     <li className={isCurrentPage}>
       <Link
