@@ -19,6 +19,8 @@ import DrillingOperations from '../assets/Stena_Carron.jpg'
 import Sawyer from '../assets/Sawyer-v2-large.jpg'
 import Riders from '../assets/ms-bike-race.jpg'
 import Footer from './Footer'
+import BTT from '../assets/back-to-top.png'
+
 class TemplateWrapper extends React.Component {
   constructor(props) {
     super(props)
@@ -28,6 +30,7 @@ class TemplateWrapper extends React.Component {
       height: 0,
       isPortrait: null,
       isMobile: null,
+      showBTT: null,
     }
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this)
 
@@ -36,13 +39,35 @@ class TemplateWrapper extends React.Component {
 
     this.pageClass = this.isSplash ? 'hero' : 'wrapper'
     this.uaObj = this.uaObj.bind(this)
+    this.trackScrolling = this.trackScrolling.bind(this)
     this.ua = null
   }
 
   componentDidMount() {
     window.addEventListener('resize', this.updateWindowDimensions)
+    document.addEventListener('scroll', this.trackScrolling)
     this.ua = window.navigator.userAgent
     this.updateWindowDimensions()
+  }
+
+  trackScrolling(event) {
+    const isBottom = el => {
+      return el.getBoundingClientRect().bottom <= window.innerHeight
+    }
+    const isTop = el => {
+      return el.getBoundingClientRect().top <= window.innerHeight
+    }
+    // console.log('track scrolling', event)
+    this.setState(prevState => ({ showBTT: false }))
+    const wrappedElement = document.getElementById('dload')
+    let b = isBottom(wrappedElement)
+    let t = isTop(wrappedElement)
+    if (b) {
+      this.setState(prevState => ({ showBTT: true }))
+    }
+    if (t) {
+      //this.setState(prevState => ({ showBTT: false }))
+    }
   }
 
   updateWindowDimensions() {
@@ -79,6 +104,20 @@ class TemplateWrapper extends React.Component {
     const pathname = this.props.location.pathname
     const isSplash = pathname === withPrefix('/')
     return isSplash ? '' : <Footer />
+  }
+
+  backToTop() {
+    const pathname = this.props.location.pathname
+    const isSplash = pathname === withPrefix('/')
+    const isMobile = this.state.isMobile
+    // console.log(isMobile)
+    return !isSplash && isMobile ? (
+      <a data-show={this.state.showBTT} className="back-to-top" href="#header">
+        <img src={BTT} />
+      </a>
+    ) : (
+      ''
+    )
   }
 
   getImages() {
@@ -143,6 +182,7 @@ class TemplateWrapper extends React.Component {
           handleToggle={this.toggleModal}
           isopen={this.state.isopen}
         />
+        {this.backToTop()}
         {this.useFooter()}
       </div>
     )

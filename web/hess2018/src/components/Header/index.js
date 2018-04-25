@@ -12,7 +12,7 @@ class Header extends React.Component {
 
   render() {
     return (
-      <div className="header" data-modalopen={this.props.modalopen}>
+      <div id="header" className="header" data-modalopen={this.props.modalopen}>
         <header>
           <div>
             <MenuButton />

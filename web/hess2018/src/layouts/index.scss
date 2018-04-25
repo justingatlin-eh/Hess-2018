@@ -11,10 +11,12 @@ $arrow-image: url('../assets/arrow-on-off.png');
 $DesktopSplash: url('../assets/splash-page-image.jpg');
 $MobileSplash: url('../assets/Mobile-Splash.jpg');
 
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+
 @font-face {
   font-family: 'Montserrat';
-  src: local('Montserrat'),
-    url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
+  src: url('https://fonts.googleapis.com/css?#iefixfamily=Montserrat:400,700')
+    format('embedded-opentype');
 }
 
 @font-face {
@@ -497,15 +499,15 @@ header {
     }
     th:first-child,
     td:first-child {
+      font-family: 'HelveticaNeueLT', 'Montserrat', Arial;
       text-align: left;
       color: #000000;
       width: auto;
-      font-family: HelveticaNeueLT, 'Montserrat' Arial;
     }
     thead th:first-child,
     th.medium {
       color: $header-green;
-      font-family: HelveticaNeueLtMedium, 'Montserrat', Arial;
+      font-family: 'HelveticaNeueLtMedium', 'Montserrat', Arial;
     }
     th:last-child {
       color: #000000;
@@ -514,7 +516,7 @@ header {
     td:last-child {
       padding-right: 28px;
       width: 94px;
-      font-family: HelveticaNeueLT 'Montserrat', Arial;
+      font-family: 'HelveticaNeueLT', 'Montserrat', Arial;
     }
     td {
       border-bottom: none;
@@ -1186,10 +1188,24 @@ header {
 }
 
 [data-isie='true'] {
-  //font-family: 'Arial Bold';
-  font-weight: normal !important;
+  font-family: Montserrat, Arial, sans-serif;
+  h1,
+  .hbold {
+    font-weight: bold;
+  }
 }
 
 a:focus {
   outline: none !important;
+}
+
+.back-to-top {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 5;
+  visibility: hidden;
+  &[data-show='true'] {
+    visibility: visible;
+  }
 }
