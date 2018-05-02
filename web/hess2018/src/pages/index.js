@@ -15,6 +15,7 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount() {
+    this._ismounted = true
     this.timer = setTimeout(this.changeOpa, 2500)
   }
 
@@ -31,19 +32,18 @@ class IndexPage extends React.Component {
       clearTimeout(this.timer2)
       this.goTo()
     } else {
-      this.setState(prevState => ({ opa: prevState.opa - 0.038 }))
-      this.timer2 = setTimeout(this.changeOpa, 100)
+      if (this._ismounted === true) {
+        this.setState(prevState => ({ opa: prevState.opa - 0.038 }))
+        this.timer2 = setTimeout(this.changeOpa, 100)
+      } else {
+        clearTimeout(this.timer2, this.timer)
+      }
     }
     //console.log('opa complete', this.state.opa)
   }
 
-  componentDidUpdate() {
-    //console.log('component unmounted')
-    clearTimeout(this.timer2)
-  }
-
   componentWillUnmount() {
-    //console.log('component unmounted')
+    this._ismounted = false
     clearTimeout(this.timer2)
   }
 

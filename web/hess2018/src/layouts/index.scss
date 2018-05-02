@@ -10,9 +10,7 @@ $menu-hover: #003c25;
 $arrow-image: url('../assets/arrow-on-off.png');
 $DesktopSplash: url('../assets/splash-page-image.jpg');
 $MobileSplash: url('../assets/Mobile-Splash.jpg');
-
 @import url('https://fonts.googleapis.com/css?family=Montserrat:400,700');
-
 @font-face {
   font-family: 'Montserrat';
   src: url('https://fonts.googleapis.com/css?#iefixfamily=Montserrat:400,700')
@@ -98,6 +96,18 @@ th {
 
 [data-hide='true'] {
   display: none;
+}
+
+@media screen and (min-width: 730px) {
+  [data-ismobile='false'] {
+    .menu-button {
+      visibility: hidden;
+    }
+    ul[data-hide] {
+      display: block;
+      display: flex;
+    }
+  }
 }
 
 body {
@@ -825,6 +835,7 @@ header {
 }
 
 /* Modal */
+
 .modal {
   display: none;
   position: fixed;
@@ -872,7 +883,6 @@ header {
         color: $header-green;
         text-decoration: none;
         padding: 10px 10px 0px 10px;
-
         img {
           max-width: 300px;
           margin: 0;
@@ -1205,7 +1215,14 @@ a:focus {
   right: 10px;
   z-index: 5;
   visibility: hidden;
+  padding: 0;
+  margin: 0;
   &[data-show='true'] {
     visibility: visible;
+  }
+  img {
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
   }
 }
