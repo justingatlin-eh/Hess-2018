@@ -18,7 +18,7 @@ class IndexPage extends React.Component {
   componentDidMount() {
     this._ismounted = true
     this.timer = setTimeout(this.changeOpa, 2500)
-    this.SplashMounted = true;
+    this.SplashMounted = true
   }
 
   goTo = () => {
@@ -33,27 +33,19 @@ class IndexPage extends React.Component {
       //console.log('done opa')
       this.goTo()
     } else {
-<<<<<<< HEAD
       if (this._ismounted === true) {
         this.setState(prevState => ({ opa: prevState.opa - 0.038 }))
         this.timer2 = setTimeout(this.changeOpa, 100)
       } else {
         clearTimeout(this.timer2, this.timer)
-=======
-      const pathname = this.props.location.pathname
-      const isSplash = pathname === withPrefix('/')
-        if (this.SplashMounted){ 
-        this.setState(prevState => ({ opa: prevState.opa - 0.038 }))
-        this.timer2 = setTimeout(this.changeOpa, 100)
-        }
->>>>>>> 6f297f3cf41659089c30c529bb3c807864813a1c
       }
     }
+  }
 
   componentWillUnmount() {
     this._ismounted = false
     clearTimeout(this.timer2)
-    this.SplashMounted = false;
+    this.SplashMounted = false
   }
 
   render() {
