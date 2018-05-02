@@ -112,7 +112,7 @@ class TemplateWrapper extends React.Component {
     const isMobile = this.state.isMobile
     // console.log(isMobile)
     return !isSplash && isMobile ? (
-      <a data-show={this.state.showBTT} className="back-to-top" href="#header">
+      <a data-show={this.state.showBTT} onClick={(e) => { window.scrollTo(0, 0); }} className="back-to-top" href="javascript: void(0);">
         <img src={BTT} />
       </a>
     ) : (

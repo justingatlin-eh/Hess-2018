@@ -2,6 +2,7 @@ import React from 'react'
 import { navigateTo } from 'gatsby-link'
 import HomeHero from '../assets/splash-page-image.jpg'
 import MobileHero from '../assets/Mobile-Splash.jpg'
+import { withPrefix } from 'gatsby-link'
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -16,26 +17,29 @@ class IndexPage extends React.Component {
 
   componentDidMount() {
     this.timer = setTimeout(this.changeOpa, 2500)
+    this.SplashMounted = true;
   }
 
   goTo = () => {
     // Needs to fade
     clearTimeout(this.timer2)
-    navigateTo('/our-company')
+    navigateTo('/media_files/IROL/10/101801/2018_AR/our-company')
   }
 
   changeOpa = () => {
     clearTimeout(this.timer2)
     if (this.state.opa <= 0) {
       //console.log('done opa')
-      clearTimeout(this.timer2)
       this.goTo()
     } else {
-      this.setState(prevState => ({ opa: prevState.opa - 0.038 }))
-      this.timer2 = setTimeout(this.changeOpa, 100)
+      const pathname = this.props.location.pathname
+      const isSplash = pathname === withPrefix('/')
+        if (this.SplashMounted){ 
+        this.setState(prevState => ({ opa: prevState.opa - 0.038 }))
+        this.timer2 = setTimeout(this.changeOpa, 100)
+        }
+      }
     }
-    //console.log('opa complete', this.state.opa)
-  }
 
   componentDidUpdate() {
     //console.log('component unmounted')
@@ -45,6 +49,7 @@ class IndexPage extends React.Component {
   componentWillUnmount() {
     //console.log('component unmounted')
     clearTimeout(this.timer2)
+    this.SplashMounted = false;
   }
 
   render() {
