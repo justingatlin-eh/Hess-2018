@@ -16,7 +16,7 @@ const CompanyPage = props => {
   ]
 
   const tagClicked = url => {
-    navigateTo('/media_files/IROL/10/101801/2018_AR'+url)
+    navigateTo('/media_files/IROL/10/101801/2018_AR2'+url)
   }
 
   return (

@@ -160,6 +160,7 @@ class TemplateWrapper extends React.Component {
         data-isportrait={this.state.isPortrait}
         data-isie={isIE}
         data-isfirefox={obj.isFireFox}
+        data-issplash={this.useHeader() ? false : true}
       >
         <Helmet>
           <title>Hess Annual Report</title>

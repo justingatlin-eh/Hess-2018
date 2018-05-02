@@ -110,15 +110,15 @@ th {
 }
 
 @media screen and (min-width: 730px) {
-  [data-ismobile='false'] {
-    .menu-button {
-      visibility: hidden;
+    [data-ismobile='false'] {
+        .menu-button {
+            visibility: hidden;
+        }
+        ul[data-hide] {
+            display: block;
+            display: flex;
+        }
     }
-    ul[data-hide] {
-      display: block;
-      display: flex;
-    }
-  }
 }
 
 body {
@@ -141,6 +141,17 @@ h1 {
     margin-bottom: 30px;
     border-bottom: 1px solid $header-green;
     color: $header-green;
+}
+
+#header {
+    display: none;
+}
+
+
+[data-issplash="false"] {
+    #header {
+        display: block;
+    }
 }
 
 h2 {
@@ -858,51 +869,6 @@ header {
 }
 
 .modal {
-<<<<<<< HEAD
-  border: none;
-  border-spacing: 0;
-  margin: 0;
-  &[data-isopen='true'] {
-    display: table;
-  }
-  tbody {
-    td {
-      .close {
-        position: absolute;
-        top: 8px;
-        right: 10px;
-        font-size: 38px;
-        &:hover {
-          cursor: pointer;
-        }
-      }
-      .modal-body {
-        position: relative;
-        display: inline-block;
-        background-color: #f3f2f2;
-        padding: 50px;
-      }
-      text-align: center;
-      border: none;
-      &:after:hover {
-        cursor: pointer;
-      }
-      a {
-        display: inline-block;
-        font-family: HelveticaNeueLtMedium, 'Montserrat', Arial;
-        color: $header-green;
-        text-decoration: none;
-        padding: 10px 10px 0px 10px;
-        img {
-          max-width: 300px;
-          margin: 0;
-          display: block;
-          margin-bottom: 16px;
-        }
-        &:hover {
-          text-decoration: underline;
-          color: $subheader-green;
-=======
     border: none;
     border-spacing: 0;
     margin: 0;
@@ -948,7 +914,6 @@ header {
                     color: $subheader-green;
                 }
             }
->>>>>>> 6f297f3cf41659089c30c529bb3c807864813a1c
         }
     }
 }
@@ -1265,24 +1230,6 @@ a:focus {
 }
 
 .back-to-top {
-<<<<<<< HEAD
-  position: fixed;
-  bottom: 10px;
-  right: 10px;
-  z-index: 5;
-  visibility: hidden;
-  padding: 0;
-  margin: 0;
-  &[data-show='true'] {
-    visibility: visible;
-  }
-  img {
-    margin: 0;
-    padding: 0;
-    background-color: #ffffff;
-  }
-}
-=======
     position: fixed;
     bottom: 10px;
     right: 10px;
@@ -1299,4 +1246,3 @@ a:focus {
         background-color: #ffffff;
     }
 }
->>>>>>> 6f297f3cf41659089c30c529bb3c807864813a1c

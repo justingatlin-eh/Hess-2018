@@ -24,7 +24,7 @@ class IndexPage extends React.Component {
   goTo = () => {
     // Needs to fade
     clearTimeout(this.timer2)
-    navigateTo('/media_files/IROL/10/101801/2018_AR/our-company')
+    navigateTo('/media_files/IROL/10/101801/2018_AR2/our-company')
   }
 
   changeOpa = () => {
