@@ -3,6 +3,7 @@ import { navigateTo } from 'gatsby-link'
 import HomeHero from '../assets/splash-page-image.jpg'
 import MobileHero from '../assets/Mobile-Splash.jpg'
 import { withPrefix } from 'gatsby-link'
+import { PUBLIC_PATH } from '../utils/paths'
 
 class IndexPage extends React.Component {
   constructor(props) {
@@ -19,12 +20,13 @@ class IndexPage extends React.Component {
     this._ismounted = true
     this.timer = setTimeout(this.changeOpa, 2500)
     this.SplashMounted = true
+    this.props.handlePage('issplash')
   }
 
   goTo = () => {
     // Needs to fade
     clearTimeout(this.timer2)
-    navigateTo('/media_files/IROL/10/101801/2018_AR/our-company')
+    navigateTo(PUBLIC_PATH.concat('/our-company'))
   }
 
   changeOpa = () => {

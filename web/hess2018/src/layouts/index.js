@@ -20,6 +20,7 @@ import Sawyer from '../assets/Sawyer-v2-large.jpg'
 import Riders from '../assets/ms-bike-race.jpg'
 import Footer from './Footer'
 import BTT from '../assets/back-to-top.png'
+import handlePage from '../utils/handlePage'
 
 class TemplateWrapper extends React.Component {
   constructor(props) {
@@ -31,16 +32,16 @@ class TemplateWrapper extends React.Component {
       isPortrait: null,
       isMobile: null,
       showBTT: null,
+      isSplash: true,
     }
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this)
-
     this.path = props.location.pathname
     this.toggleModal = this.toggleModal.bind(this)
-
-    this.pageClass = this.isSplash ? 'hero' : 'wrapper'
     this.uaObj = this.uaObj.bind(this)
     this.trackScrolling = this.trackScrolling.bind(this)
     this.ua = null
+    this.pathname = this.props.location.pathname
+    this.handlePage = this.handlePage.bind(this)
   }
 
   componentDidMount() {
@@ -50,20 +51,55 @@ class TemplateWrapper extends React.Component {
     this.updateWindowDimensions()
   }
 
+  handlePage(isSplash) {
+    const arr = [
+      '/board-and-officers',
+      '/404',
+      '/financial-highlights',
+      '/global-operations',
+      '/letter-to-shareholders',
+      '/sustainability',
+      '/our-company',
+    ]
+    //this.pageClass = this.state.isSplash ? 'hero' : 'wrapper'
+
+    const isFound = !arr.find(function(e) {
+      const re = new RegExp(e, 'i')
+      return re.test(isSplash)
+    })
+
+    this.setState(prevState => {
+      return {
+        isSplash: Boolean(isFound),
+        pageClass: Boolean(isFound) ? 'hero' : 'wrapper',
+        currentLocation: isSplash,
+      }
+    })
+  }
+
   trackScrolling(event) {
     const isBottom = el => {
-      return el.getBoundingClientRect().bottom <= window.innerHeight
+      if (el) {
+        return el.getBoundingClientRect().bottom <= window.innerHeight
+      }
+      return 0
     }
     const isTop = el => {
-      return el.getBoundingClientRect().top <= window.innerHeight
+      if (el) {
+        return el.getBoundingClientRect().top <= window.innerHeight
+      }
+      return 0
     }
-    // console.log('track scrolling', event)
-    this.setState(prevState => ({ showBTT: false }))
+    this.setState(prevState => {
+      return { showBTT: false }
+    })
     const wrappedElement = document.getElementById('dload')
     let b = isBottom(wrappedElement)
     let t = isTop(wrappedElement)
     if (b) {
-      this.setState(prevState => ({ showBTT: true }))
+      this.setState(prevState => {
+        return { showBTT: true }
+      })
     }
     if (t) {
       //this.setState(prevState => ({ showBTT: false }))
@@ -76,7 +112,9 @@ class TemplateWrapper extends React.Component {
     const width = window.innerWidth
     const height = window.innerHeight
     const isPortrait = height >= width
-    this.setState(prevState => ({ width, height, isPortrait, isMobile }))
+    this.setState(prevState => {
+      return { width, height, isPortrait, isMobile }
+    })
   }
 
   uaObj() {
@@ -87,32 +125,29 @@ class TemplateWrapper extends React.Component {
   }
 
   toggleModal(s) {
-    this.setState(prevState => ({ isopen: !this.state.isopen }))
+    this.setState(prevState => {
+      return { isopen: !this.state.isopen }
+    })
   }
 
   useHeader() {
-    const pathname = this.props.location.pathname
-    const isSplash = pathname === withPrefix('/')
-    //console.log('isSplash', isSplash)
-    return isSplash ? (
+    return this.state.isSplash ? (
       ''
     ) : (
-      <Header location={pathname} handleToggle={this.toggleModal} />
+      <Header
+        location={this.state.currentLocation}
+        handleToggle={this.toggleModal}
+      />
     )
   }
 
   useFooter() {
-    const pathname = this.props.location.pathname
-    const isSplash = pathname === withPrefix('/')
-    return isSplash ? '' : <Footer />
+    return this.state.isSplash ? '' : <Footer />
   }
 
   backToTop() {
-    const pathname = this.props.location.pathname
-    const isSplash = pathname === withPrefix('/')
     const isMobile = this.state.isMobile
-    // console.log(isMobile)
-    return !isSplash && isMobile ? (
+    return !this.state.isSplash && isMobile ? (
       <a
         data-show={this.state.showBTT}
         onClick={e => {
@@ -154,6 +189,9 @@ class TemplateWrapper extends React.Component {
       width: s.width,
       isPortrait: s.isPortrait,
       isMobile: s.isMobile,
+      isSplash: this.state.isSplash,
+      handlePage: this.handlePage,
+      currentLocation: this.state.currentLocation,
     }
   }
 
@@ -168,7 +206,7 @@ class TemplateWrapper extends React.Component {
         data-isportrait={this.state.isPortrait}
         data-isie={isIE}
         data-isfirefox={obj.isFireFox}
-        data-issplash={this.useHeader() ? false : true}
+        data-issplash={this.state.isSplash}
       >
         <Helmet>
           <title>Hess Annual Report</title>
@@ -183,8 +221,10 @@ class TemplateWrapper extends React.Component {
           />
         </Helmet>
         {this.useHeader()}
-
-        <div data-modalopen={this.state.isopen} className={this.pageClass}>
+        <div
+          data-modalopen={this.state.isopen}
+          className={this.state.pageClass}
+        >
           {this.props.children({ ...this.props, ...myprops })}
         </div>
         <DownloadModal

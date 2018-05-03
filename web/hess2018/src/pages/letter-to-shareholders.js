@@ -1,15 +1,27 @@
 import React from 'react'
 import ShareHolders from '../components/MainContent/Shareholders'
 
-export default ({ data }) => {
-  const node = data.allMarkdownRemark.edges[0].node
-  const body = node.html
-  const pageTitle = node.frontmatter.title
-  return (
-    <div className="shareholders text-content">
-      <ShareHolders />
-    </div>
-  )
+class LetterToShareholders extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  //this.props.handlePage()
+  node = this.props.data.allMarkdownRemark.edges[0].node
+  body = this.node.html
+  pageTitle = this.node.frontmatter.title
+
+  componentDidMount() {
+    this.props.handlePage(this.props.location.pathname)
+  }
+
+  render() {
+    return (
+      <div className="shareholders text-content">
+        <ShareHolders />
+      </div>
+    )
+  }
 }
 
 export const query = graphql`
@@ -31,3 +43,5 @@ export const query = graphql`
     }
   }
 `
+
+export default LetterToShareholders

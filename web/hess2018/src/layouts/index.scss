@@ -145,16 +145,6 @@ h1 {
   color: $header-green;
 }
 
-#header {
-  display: none;
-}
-
-[data-issplash='false'] {
-  #header {
-    display: block;
-  }
-}
-
 h2 {
   color: $header-green;
 }
@@ -206,12 +196,6 @@ span.super {
   margin-top: 50px;
   font-size: 14px;
   line-height: 28px;
-}
-
-[data-issplash='true'] {
-  header {
-    display: none;
-  }
 }
 
 header {
@@ -281,6 +265,18 @@ header {
         }
       }
     }
+  }
+}
+
+#header,
+.site-footer {
+  display: none;
+}
+
+[data-issplash='false'] {
+  #header,
+  .site-footer {
+    display: block;
   }
 }
 

@@ -1,5 +1,5 @@
 module.exports = {
-  pathPrefix: '/media_files/IROL/10/101801/2018_AR',
+  pathPrefix: '/media_files/IROL/10/101801/2018_AR3',
   siteMetadata: {
     title: 'Hess Annual Report',
   },

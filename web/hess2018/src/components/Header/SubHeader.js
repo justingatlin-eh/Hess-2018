@@ -4,8 +4,20 @@ import constants from './Constants'
 import { toggleMenu } from './CustomEvents'
 
 const LinkList = props => {
-  const re = new RegExp(props.currentlocation, 'i')
-  const isCurrentPage = re.test(props.to) ? 'current-page' : ''
+  const arr = [
+    '/board-and-officers',
+    '/404',
+    '/financial-highlights',
+    '/global-operations',
+    '/letter-to-shareholders',
+    '/sustainability',
+    '/our-company',
+  ]
+  const re = new RegExp(props.to, 'i')
+  const isFound = arr.find(function(e) {
+    return props.currentlocation.search(re) !== -1
+  })
+  const isCurrentPage = isFound ? 'current-page' : ''
   return (
     <li className={isCurrentPage}>
       <Link
@@ -19,27 +31,44 @@ const LinkList = props => {
   )
 }
 
-export default props => {
-  return (
-    <ul className="sub-header container-fluid" data-hide="true">
-      <LinkList currentlocation={props.location} to="/our-company">
-        Our Company
-      </LinkList>
-      <LinkList currentlocation={props.location} to="/financial-highlights">
-        Financial and<div className="br" />Operational Highlights
-      </LinkList>
-      <LinkList currentlocation={props.location} to="/letter-to-shareholders">
-        Letter to<div className="br" />Shareholders
-      </LinkList>
-      <LinkList currentlocation={props.location} to="/global-operations">
-        Global<div className="br" />Operations
-      </LinkList>
-      <LinkList currentlocation={props.location} to="/sustainability">
-        Sustainablity
-      </LinkList>
-      <LinkList currentlocation={props.location} to="/board-and-officers">
-        Board of Directors and<div className="br" />Corporate Officers
-      </LinkList>
-    </ul>
-  )
+class SubHeaderSection extends React.Component {
+  constructor(props) {
+    super(props)
+  }
+
+  render() {
+    return (
+      <ul className="sub-header container-fluid" data-hide="true">
+        <LinkList currentlocation={this.props.location} to="/our-company">
+          Our Company
+        </LinkList>
+        <LinkList
+          currentlocation={this.props.location}
+          to="/financial-highlights"
+        >
+          Financial and<div className="br" />Operational Highlights
+        </LinkList>
+        <LinkList
+          currentlocation={this.props.location}
+          to="/letter-to-shareholders"
+        >
+          Letter to<div className="br" />Shareholders
+        </LinkList>
+        <LinkList currentlocation={this.props.location} to="/global-operations">
+          Global<div className="br" />Operations
+        </LinkList>
+        <LinkList currentlocation={this.props.location} to="/sustainability">
+          Sustainablity
+        </LinkList>
+        <LinkList
+          currentlocation={this.props.location}
+          to="/board-and-officers"
+        >
+          Board of Directors and<div className="br" />Corporate Officers
+        </LinkList>
+      </ul>
+    )
+  }
 }
+
+export default SubHeaderSection
