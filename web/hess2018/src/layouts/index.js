@@ -93,6 +93,7 @@ class TemplateWrapper extends React.Component {
   useHeader() {
     const pathname = this.props.location.pathname
     const isSplash = pathname === withPrefix('/')
+    //console.log('isSplash', isSplash)
     return isSplash ? (
       ''
     ) : (
@@ -112,7 +113,14 @@ class TemplateWrapper extends React.Component {
     const isMobile = this.state.isMobile
     // console.log(isMobile)
     return !isSplash && isMobile ? (
-      <a data-show={this.state.showBTT} onClick={(e) => { window.scrollTo(0, 0); }} className="back-to-top" href="javascript: void(0);">
+      <a
+        data-show={this.state.showBTT}
+        onClick={e => {
+          window.scrollTo(0, 0)
+        }}
+        className="back-to-top"
+        href="javascript: void(0);"
+      >
         <img src={BTT} />
       </a>
     ) : (
@@ -160,6 +168,7 @@ class TemplateWrapper extends React.Component {
         data-isportrait={this.state.isPortrait}
         data-isie={isIE}
         data-isfirefox={obj.isFireFox}
+        data-issplash={this.useHeader() ? false : true}
       >
         <Helmet>
           <title>Hess Annual Report</title>
