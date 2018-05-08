@@ -14,10 +14,15 @@ const LinkList = props => {
     '/our-company',
   ]
   const re = new RegExp(props.to, 'i')
-  const isFound = arr.find(function(e) {
-    return props.currentlocation.search(re) !== -1
-  })
-  const isCurrentPage = isFound ? 'current-page' : ''
+  const isFound = function(e) {
+    for (var a = 0; a < arr.length; a++) {
+      if (props.currentlocation.search(re) !== -1) {
+        return true
+      }
+    }
+    return false
+  }
+  const isCurrentPage = isFound() ? 'current-page' : ''
   return (
     <li className={isCurrentPage}>
       <Link

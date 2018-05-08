@@ -62,16 +62,21 @@ class TemplateWrapper extends React.Component {
       '/our-company',
     ]
     //this.pageClass = this.state.isSplash ? 'hero' : 'wrapper'
-
-    const isFound = !arr.find(function(e) {
-      const re = new RegExp(e, 'i')
-      return re.test(isSplash)
-    })
+    const isFound = () => {
+      for (var a = 0; a < arr.length; a++) {
+        const e = arr[a]
+        const re = new RegExp(e, 'i')
+        if (re.test(isSplash)) {
+          return false
+        }
+      }
+      return true
+    }
 
     this.setState(prevState => {
       return {
-        isSplash: Boolean(isFound),
-        pageClass: Boolean(isFound) ? 'hero' : 'wrapper',
+        isSplash: Boolean(isFound()),
+        pageClass: Boolean(isFound()) ? 'hero' : 'wrapper',
         currentLocation: isSplash,
       }
     })
